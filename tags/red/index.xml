@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Red on FreshPink</title>
+    <link>https://elecbrandy.github.io/freshpink/tags/red/</link>
+    <description>Recent content in Red on FreshPink</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://elecbrandy.github.io/freshpink/tags/red/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>01. FreshPink</title>
+      <link>https://elecbrandy.github.io/freshpink/posts/post-1/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://elecbrandy.github.io/freshpink/posts/post-1/</guid>
+      <description>What is the FreshPink?&#xA;Introducing FreshPink, a Hugo blog theme designed specifically for developers embarking on creating or enhancing their development blog. With an emphasis on simplicity and functionality, FreshPink offers a clean and straightforward design, complemented by a vibrant fresh pink color scheme, and packed with features that cater to the unique needs of developer blogs.&#xA;Features&#xA;Clean and Straightforward Design&#xA;Lightweight for Easy Customization&#xA;Vibrant Main Color Scheme</description>
+    </item>
+  </channel>
+</rss>
