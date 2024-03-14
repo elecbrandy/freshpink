@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Info on FreshPink</title>
+    <link>https://elecbrandy.github.io/freshpink/tags/info/</link>
+    <description>Recent content in Info on FreshPink</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 02 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://elecbrandy.github.io/freshpink/tags/info/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>02. Color set</title>
+      <link>https://elecbrandy.github.io/freshpink/posts/post-2/</link>
+      <pubDate>Tue, 02 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://elecbrandy.github.io/freshpink/posts/post-2/</guid>
+      <description>Color Set&#xA;This theme supports light/dark mode. You can switch between the modes via the toggle in the top right corner of the header.&#xA;@root primary-color #FF53B0 white-color #FFFFFF lgray-color #f2f2f2 dgray-color #282828 black-color #181818 @light background-color #FFFFFF gray-color #282828 text-color #181818 @dark background-color #181818 gray-color #f2f2f2 text-color #FFFFFF CSS code&#xA;This is the CSS that represents the above color settings. If you want to change the color settings, you can do so in assets/css/main.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'exampleSite/config.toml'
 languageCode = 'en-us'
 title = 'FreshPink'
 
