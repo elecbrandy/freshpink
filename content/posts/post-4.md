@@ -3,7 +3,7 @@ title = '04. Shortcut'
 date = 2024-01-04
 draft = false
 featured_image = "/basic.png"
-tags = ['red']
+tags = ['tag2']
 +++
 
 <br>

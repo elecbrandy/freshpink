@@ -1,13 +1,13 @@
-# FreshPink Hugo Theme
----
+# FreshPink
+
 Welcome to the FreshPink Hugo Theme! This theme is designed to be easy to use and customize, providing a beautiful and responsive design for your Hugo site.
 
 ## Installation
----
+
 There are two methods to install the FreshPink theme: using Git Submodule (recommended for easy updates) and downloading it directly.
 
 ### Method 1: Install as a Git Submodule
----
+
 1. **Navigate to Your Hugo Site Directory**:
    Open a terminal and change directory to your Hugo site root. If you haven't created a Hugo site yet, run `hugo new site yourSiteName` to create one.
 
@@ -30,7 +30,7 @@ There are two methods to install the FreshPink theme: using Git Submodule (recom
    ```
 
 ### Method 2: Download and Install Manually
----
+
 1. **Download the Theme**:
    Go to the [FreshPink GitHub repository](https://github.com/ElecBrandy/freshpink) and download the theme as a ZIP file.
 
@@ -44,11 +44,11 @@ There are two methods to install the FreshPink theme: using Git Submodule (recom
    Use the `hugo server` command to build and preview your site locally.
 
 ## Customizing the Theme
----
+
 FreshPink is designed to be easily customizable. You can modify the styles, layouts, and content as needed to suit your site's needs.
 
 ## Need Help?
----
+
 If you encounter any issues or have questions, feel free to open an issue on the [GitHub repository](https://github.com/ElecBrandy/freshpink/issues).
 
-Thank you for choosing FreshPink for your Hugo site!
+Thank you for choosing FreshPink for your Hugo site! :)

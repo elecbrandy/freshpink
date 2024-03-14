@@ -3,7 +3,7 @@ title = '03. Features'
 date = 2024-01-03
 draft = false
 featured_image = "/basic.png"
-tags = ['red']
+tags = ['tag1', 'tag2']
 +++
 
 <br>
