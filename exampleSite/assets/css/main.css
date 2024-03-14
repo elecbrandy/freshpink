@@ -1,0 +1,351 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+@media (max-width: 500px) {
+  @import url("min700.css");
+}
+
+/* >>>>> ================ COLOR_VAR =============== <<<<< */
+:root {
+  --primary-color: #FF53B0;
+  --white-color: #FFFFFF;
+  --black-color: #181818;
+  --dgray-color: #282828;
+  --lgray-color: #f2f2f2;
+}
+
+body[data-theme="light"] {
+  --background-color: var(--white-color);
+  --text-color: var(--black-color);
+  --gray-color: var(--lgray-color);
+}
+
+body[data-theme="dark"] {
+  --background-color: var(--black-color);
+  --text-color: var(--white-color);
+  --gray-color: var(--dgray-color);
+}
+
+/* >>>>> ================ MAIN_CSS =============== <<<<< */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--text-color);
+  font-family: 'noto sans kr';
+  letter-spacing: 0.2px;
+  line-height: 1.8;
+  background-color: var(--background-color);
+  margin: 0 auto;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  width: 80%;
+  max-width: 700px;
+  min-width: 360px;
+  margin: auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.list,
+.tag-list {
+  margin-top: 40px;
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+li {
+  list-style-position: inside;
+}
+
+ol {
+  padding-left: 20px;
+}
+
+.page-link {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.post-title {
+  margin-top: 10px;
+  display: flex;
+  align-items: baseline;
+}
+
+.post-title a {
+  margin-right: 10px;
+}
+
+.post-title small {
+  color: var(--gray);
+}
+
+.page-links {
+  margin-top: 10px;
+}
+
+div.content p img {
+  width: 100%;
+  height: auto;
+}
+
+div.content p,
+div.content ul
+{
+  margin-top: 4px;
+  margin-bottom:  8px;
+}
+
+div.content div.list p img {
+  width: auto;
+}
+
+div.content div.list ul {
+  padding-left: 20px;
+}
+
+/* >>>>> ================ HEADER_CSS =============== <<<<< */
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 54px;
+	z-index: 999;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  z-index: 1000;
+}
+
+.header-container {
+  width: 80%;
+  max-width: 700px;
+  min-width: 360px;
+  margin: 0 auto;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-title {
+  font-size: 1.2rem;
+  font-weight: 740;
+}
+
+.header-menu {
+	list-style: none;
+	display: flex;
+	gap: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+.header-menu li a {
+	text-decoration: none;
+}
+
+.header-scrolled {
+  background-color: var(--background-color)
+}
+
+/* >>>>> ================ HEADER_OTHER_CSS =============== <<<<< */
+.header-home {
+  	background-color: var(--background-color)
+}
+
+.header-other {
+  background-color: transparent;
+  transition: background-color 0.3s;
+}
+
+/* >>>>> ================ PROGRESS_BAR_CSS =============== <<<<< */
+.progress-bar {
+  position: fixed;
+  top: 54px;
+  left: 0;
+  width: 0%;
+  height: 6px;
+  background-color: var(--primary-color);
+  z-index: 9999;
+}
+
+/* >>>>> ================ PRE_CONTENT_CSS =============== <<<<< */
+.pre-content {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.pre-content:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+  z-index: 1;
+}
+
+.pre-title {
+  position: absolute;
+  top: 200px;
+  color: white;
+  text-align: center;
+  z-index: 1;
+}
+
+.pre-title h1{
+  line-height: 0;
+}
+
+/* >>>>> ================ MARKDOWN_CSS =============== <<<<< */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0;
+    font-weight: 740;
+}
+
+h1 {
+    font-size: 1.6rem;
+    line-height: 1.8;
+}
+
+h2 {
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
+
+h3 {
+    font-size: 1.0rem;
+    line-height: 1.2;
+}
+
+div.content blockquote {
+  font-weight: 740;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  margin: 0;
+  padding: 10px 10px;
+  border-left: 5px solid var(--primary-color);
+  background-color: var(--gray-color);
+}
+
+div.content blockquote p {
+  margin: 0;
+}
+
+p code {
+  padding: 4px;
+  margin: 4px;
+  border-radius: 4px;
+  color: var(--background-color);
+  background-color: var(--text-color);
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+pre {
+  padding: 10px; /* 상하좌우 padding */
+  border-radius: 4px;
+  tab-size: 4; /* 기타 브라우저용 탭 크기 */
+  display: block; /* 기본값이며, 블록 요소로서의 동작을 명시적으로 지정 */
+  overflow-x: auto; /* 가로로 넘치는 내용이 있을 경우 스크롤바 표시 */
+  white-space: pre-wrap; /* 내용이 너비를 넘어갈 때 자동으로 줄바꿈 */
+  word-wrap: break-word; /* 긴 단어가 줄바꿈되도록 함 */
+}
+
+pre code::before {
+  content: attr(class); /* 클래스 이름을 내용으로 사용 */
+  display: block; /* 블록 요소로 표시 */
+  text-transform: uppercase; /* 대문자로 표시 */
+  color: var(--white-color); /* 글씨 색상 */
+  padding: 0px 6px;
+  text-align: right;
+}
+
+/* 클래스 이름에서 'language-' 부분을 제거하기 위한 추가 스타일 */
+pre code::before {
+  content: "" attr(data-lang); /* 언어명만 표시 */
+}
+
+/* >>>>> ================ COMMIT_CSS =============== <<<<< */
+.commit {
+  max-width: 100%;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.commit img {
+  width: 100%;
+  height: auto;
+}
+
+/* >>>>> ================ LIGHT/DARKMODE_CSS =============== <<<<< */
+#theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#theme-toggle img {
+  width: 16px;
+  height: auto;
+}
+
+/* >>>>> ================ FOOTER_CSS =============== <<<<< */
+footer {
+  font-size: 10pt;
+  color: var(--text-color);
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+/* >>>>> ================ SHORTCUT_CSS =============== <<<<< */
+div.alert {
+  width: auto;
+  height: 40px;
+  margin: 8px 0px;
+  text-align: center;
+  padding: 4px 0px 0px 0px;
+  border-radius: 4px;
+  background-color: var(--primary-color);
+}
+
+div.alert a {
+  color: var(--white-color);
+  font-weight:400;
+  text-decoration: none;
+}
+
+div.alert a:hover {
+  color: var(--dgray-color);
+  font-weight:400;
+  text-decoration: none;
+}
