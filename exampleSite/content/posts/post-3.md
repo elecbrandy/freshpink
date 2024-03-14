@@ -2,7 +2,7 @@
 title = '03. Features'
 date = 2024-01-03
 draft = false
-featured_image = "/basic.png"
+featured_image = "https://raw.githubusercontent.com/ElecBrandy/freshpink/gh-pages/basic.png"
 tags = ['tag1', 'tag2']
 +++
 

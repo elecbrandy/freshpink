@@ -2,7 +2,7 @@
 title = '02. Color set'
 date = 2024-01-02
 draft = false
-featured_image = "https://github.com/ElecBrandy/freshpink/basic.png"
+featured_image = "https://raw.githubusercontent.com/ElecBrandy/freshpink/gh-pages/basic.png"
 tags = ['info', 'tag1']
 +++
 
