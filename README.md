@@ -1,8 +1,7 @@
 # FreshPink
 
-<img src="https://raw.githubusercontent.com/ElecBrandy/freshpink/images/tn.png">
-
-<img src="https://raw.githubusercontent.com/ElecBrandy/freshpink/images/screenshot.png">
+[ThemeDir]/images/screenshot.png
+[ThemeDir]/images/tn.png
 
 Welcome to the FreshPink Hugo Theme! This theme is designed to be easy to use and customize, providing a beautiful and responsive design for your Hugo site.
 
