@@ -2,7 +2,7 @@
 title = '01. FreshPink'
 date = 2024-01-01
 draft = false
-featured_image = "/basic.png"
+featured_image = "basic.png"
 tags = ['red']
 +++
 

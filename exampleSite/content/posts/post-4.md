@@ -24,7 +24,7 @@ This works similarly to a button that lets you jump to a link of your choice. Yo
 ```
 #### @example
 {{<alert>}}
-<a href="https://example.org/">placeholder</a>
+<a href="https://elecbrandy.github.io/freshpink/">placeholder</a>
 {{</alert>}}
 
 
