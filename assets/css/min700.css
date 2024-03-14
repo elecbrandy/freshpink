@@ -1,0 +1,16 @@
+@media (max-width: 500px) {
+	.content {
+		min-width: 360px; /* 최소 너비를 300px로 설정 */
+		margin: auto; /* 페이지 중앙에 위치하도록 설정 */
+		padding: 20px; /* 내부 여백 설정 */
+		box-sizing: border-box; /* 패딩과 보더가 너비에 포함되도록 설정 */
+	}
+
+	.header-container {
+		padding: 0px 20px;
+	  }
+
+	.pre-title {
+		top: 200px;
+	}
+}
