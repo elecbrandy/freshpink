@@ -42,4 +42,3 @@ A "Back to Top" button, implemented via [**Vanilla Back to Top**](https://github
 
 <br>
 <br>
-
