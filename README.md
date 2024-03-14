@@ -1,7 +1,7 @@
 # FreshPink
 
-[ThemeDir]/images/screenshot.png
-[ThemeDir]/images/tn.png
+![ThemeDir](/images/tn.png)
+![ThemeDir](/images/screenshot.png)
 
 Welcome to the FreshPink Hugo Theme! This theme is designed to be easy to use and customize, providing a beautiful and responsive design for your Hugo site.
 
