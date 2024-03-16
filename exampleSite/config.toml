@@ -24,7 +24,7 @@ weight = 30
 
 [params]
   githubUsername = "elecbrandy"
-  copyright = "Copyright © 2023 elecbrandy"
+  copyright = "Copyright © 2024 elecbrandy"
 
 [taxonomies]
   tag = "tags"
