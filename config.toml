@@ -8,12 +8,12 @@ pageRef = '/'
 weight = 10
 
 [[menus.main]]
-name = 'tags'
+name = 'TAGS'
 pageRef = '/tags'
 weight = 20
 
 [[menus.main]]
-name = 'about'
+name = 'ABOUT'
 pageRef = '/about'
 weight = 30
 

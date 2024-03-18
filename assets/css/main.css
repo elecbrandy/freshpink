@@ -35,7 +35,8 @@ html {
 body {
   color: var(--text-color);
   font-family: 'noto sans kr';
-  letter-spacing: 0.2px;
+  letter-spacing: -0.4px;
+  font-size: 10pt;
   line-height: 1.8;
   background-color: var(--background-color);
   margin: 0 auto;
@@ -73,6 +74,8 @@ a:hover {
 
 li {
   list-style-position: inside;
+  display: flex;
+  align-items: center;
 }
 
 ol {
@@ -229,7 +232,7 @@ h4,
 h5,
 h6 {
     margin-bottom: 0;
-    font-weight: 740;
+    font-weight: 700;
 }
 
 h1 {
@@ -282,17 +285,16 @@ pre {
 }
 
 pre code::before {
-  content: attr(class); /* 클래스 이름을 내용으로 사용 */
-  display: block; /* 블록 요소로 표시 */
-  text-transform: uppercase; /* 대문자로 표시 */
-  color: var(--white-color); /* 글씨 색상 */
+  content: attr(class);
+  display: block;
+  text-transform: uppercase;
+  color: var(--white-color);
   padding: 0px 6px;
   text-align: right;
 }
 
-/* 클래스 이름에서 'language-' 부분을 제거하기 위한 추가 스타일 */
 pre code::before {
-  content: "" attr(data-lang); /* 언어명만 표시 */
+  content: "" attr(data-lang);
 }
 
 /* >>>>> ================ COMMIT_CSS =============== <<<<< */
