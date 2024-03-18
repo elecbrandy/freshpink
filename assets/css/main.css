@@ -73,8 +73,8 @@ a:hover {
 }
 
 li {
-  list-style-position: inside;
-  display: flex;
+  /* list-style-position: inside; */
+  /* display: flex; */
   align-items: center;
 }
 
