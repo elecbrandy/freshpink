@@ -103,8 +103,16 @@ ol {
   margin-top: 10px;
 }
 
+div.content skill {
+  width: auto;
+}
 
-div.content img,
+div.content img {
+  width: 100%;
+  height: auto;
+  min-width: 360px;
+}
+
 div.content p img {
   width: 100%;
   height: auto;
