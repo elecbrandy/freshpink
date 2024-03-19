@@ -263,9 +263,9 @@ h3 {
 }
 
 div.content blockquote {
-  font-weight: 600;
+  font-weight: 500;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 16pt;
+  font-size: 12pt;
   font-style: italic;
   letter-spacing: 0.5px;
   line-height: 1.8;
