@@ -369,10 +369,10 @@ div.alert a:hover {
 div.freshquote {
   width: 100%;
   margin: 6px 0px;
-  font-size: 12pt;
+  font-size: 14pt;
   font-style: italic;
   text-align: center;
-  padding: 0px;
+  padding: 16px;
   border-left: 5px solid var(--primary-color);
   background-color: var(--gray-color);
 }
