@@ -30,3 +30,17 @@ This works similarly to a button that lets you jump to a link of your choice. Yo
 
 <br>
 <br>
+
+> freshquote
+
+This is to help you use more customized quotes.
+
+``` html
+	{{</* freshquote */>}}
+		placeholder
+	{{</* /freshquote */>}}
+```
+#### @example
+{{<freshquote>}}
+	placeholder
+{{</freshquote>}}
