@@ -73,8 +73,6 @@ a:hover {
 }
 
 li {
-  /* list-style-position: inside;
-  display: flex; */
   align-items: center;
 }
 
@@ -282,13 +280,13 @@ p code {
 }
 
 pre {
-  padding: 10px; /* 상하좌우 padding */
+  padding: 10px;
   border-radius: 4px;
-  tab-size: 4; /* 기타 브라우저용 탭 크기 */
-  display: block; /* 기본값이며, 블록 요소로서의 동작을 명시적으로 지정 */
-  overflow-x: auto; /* 가로로 넘치는 내용이 있을 경우 스크롤바 표시 */
-  white-space: pre-wrap; /* 내용이 너비를 넘어갈 때 자동으로 줄바꿈 */
-  word-wrap: break-word; /* 긴 단어가 줄바꿈되도록 함 */
+  tab-size: 4;
+  display: block;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }
 
 pre code::before {

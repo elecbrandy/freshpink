@@ -6,44 +6,29 @@ draft = false
 
 <br>
 
-> EXAMPLE PAGE
-
-<br>
-
-
-## FreshPink
+## Elecbrandy
 ---
-- **Email:** freshpink@example.com
-- **LinkedIn:** linkedin.com/in/freshpink
-- **GitHub:** github.com/freshpink
+- **Email:** elecbrandy@gmail.com
+- **GitHub:** [github.com/elecbrandy](https://github.com/ElecBrandy)
 
-<br>
 <br>
 
 ## Skills
 ---
-- **Languages:** Python, JavaScript, Java, C#
-- **Frameworks/Libraries:** React, Django, Node.js, .NET
-- **Databases:** MySQL, MongoDB, PostgreSQL
-- **Tools:** Docker, Git, Jenkins, AWS
-- **Others:** RESTful API design, Agile methodologies, TDD
+<img src="https://img.shields.io/badge/Adobe-FF0000?style=flat-square&logo=Adobe&logoColor=white"/>
+<img src="https://img.shields.io/badge/Lightroom-31A8FF?style=flat-square&logo=adobelightroom&logoColor=white"/>
+<img src="https://img.shields.io/badge/Photoshop-03A9F4?style=flat-square&logo=adobephotoshop&logoColor=white"/>
+<img src="https://img.shields.io/badge/Illustrator-FF9A00?style=flat-square&logo=adobeillustrator&logoColor=white"/>
+<img src="https://img.shields.io/badge/Aftereffects-B388FF?style=flat-square&logo=adobeaftereffects&logoColor=white"/>
+<img src="https://img.shields.io/badge/Premierepro-9999FF?style=flat-square&logo=adobepremierepro&logoColor=white"/>
+
+</br>
+
+<img src="https://img.shields.io/badge/Github-181717?style=flat-square&logo=Github&logoColor=white"/>
+<img src="https://img.shields.io/badge/Hugo-FF4088?style=flat-square&logo=Hugo&logoColor=white"/>
 
 <br>
-<br>
 
-## Experience
----
-**Senior Software Developer, Tech Solutions Inc.**
-- July 2015 - February 2019
-- Led the development of a scalable web application,...
-- Implemented RESTful services and APIs, improving...
-- Mentored junior developers, enhancing team skills...
-
-**Software Developer, Innovative Start-up**
-- July 2015 - February 2019
-- Developed and maintained several web applications using React and Node.js...
-- Collaborated with cross-functional teams to define, design...
-- Optimized application performance...
 
 <br>
 <br>
