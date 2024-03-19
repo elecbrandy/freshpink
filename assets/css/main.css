@@ -103,8 +103,10 @@ ol {
   margin-top: 10px;
 }
 
-div.content skill img {
+div.skill img {
   width: auto;
+  height: 20px;
+  min-width: 10px;
 }
 
 div.content img {
