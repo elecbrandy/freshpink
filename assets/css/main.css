@@ -103,12 +103,6 @@ ol {
   margin-top: 10px;
 }
 
-div.skill img {
-  width: auto;
-  height: 20px;
-  min-width: 10px;
-}
-
 div.content img {
   width: 100%;
   height: auto;
@@ -269,11 +263,14 @@ h3 {
 }
 
 div.content blockquote {
-  font-weight: 740;
-  font-size: 1.2rem;
-  line-height: 1.2;
+  font-weight: 600;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 16pt;
+  font-style: italic;
+  letter-spacing: 0.5px;
+  line-height: 1.8;
   margin: 0;
-  padding: 10px 10px;
+  padding: 4px 24px;
   border-left: 5px solid var(--primary-color);
   background-color: var(--gray-color);
 }
