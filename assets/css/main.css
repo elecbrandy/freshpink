@@ -103,9 +103,12 @@ ol {
   margin-top: 10px;
 }
 
+
+div.content img,
 div.content p img {
   width: 100%;
   height: auto;
+  min-width: 360px;
 }
 
 div.content p,
