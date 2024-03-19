@@ -169,6 +169,7 @@ header {
 }
 
 .header-menu li a {
+  line-height: 0;
 	text-decoration: none;
 }
 

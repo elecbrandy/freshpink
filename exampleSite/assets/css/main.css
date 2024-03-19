@@ -73,8 +73,8 @@ a:hover {
 }
 
 li {
-  list-style-position: inside;
-  display: flex;
+  /* list-style-position: inside;
+  display: flex; */
   align-items: center;
 }
 
@@ -125,6 +125,12 @@ div.content div.list ul {
   padding-left: 20px;
 }
 
+ul.header-menu li {
+  list-style-position: inside;
+  display: flex;
+  align-items: center;
+}
+
 /* >>>>> ================ HEADER_CSS =============== <<<<< */
 header {
 	position: fixed;
@@ -163,6 +169,7 @@ header {
 }
 
 .header-menu li a {
+  line-height: 0;
 	text-decoration: none;
 }
 
