@@ -36,7 +36,7 @@ body {
   color: var(--text-color);
   font-family: 'noto sans kr';
   letter-spacing: -0.4px;
-  font-size: 10pt;
+  font-size: 10.5pt;
   line-height: 1.8;
   background-color: var(--background-color);
   margin: 0 auto;
@@ -101,6 +101,11 @@ ol {
 
 .page-links {
   margin-top: 10px;
+}
+
+div.content img {
+  width: 100%;
+  height: auto;
 }
 
 div.content p img {
@@ -256,11 +261,14 @@ h3 {
 }
 
 div.content blockquote {
-  font-weight: 740;
-  font-size: 1.2rem;
-  line-height: 1.2;
+  font-weight: 500;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 12pt;
+  font-style: italic;
+  letter-spacing: 0.5px;
+  line-height: 1.8;
   margin: 0;
-  padding: 10px 10px;
+  padding: 4px 24px;
   border-left: 5px solid var(--primary-color);
   background-color: var(--gray-color);
 }
@@ -300,6 +308,12 @@ pre code::before {
 
 pre code::before {
   content: "" attr(data-lang);
+}
+
+hr {
+  margin-top: 2px;
+  margin-top: 6px;
+  color: var(--lgray-color);
 }
 
 /* >>>>> ================ COMMIT_CSS =============== <<<<< */
@@ -358,10 +372,12 @@ div.alert a:hover {
 }
 
 div.freshquote {
-  width: auto;
-  margin: 8px 0px;
-  font-size: 12pt;
+  width: 100%;
+  margin: 6px 0px;
+  font-size: 14pt;
   font-style: italic;
   text-align: center;
   padding: 16px;
+  border-left: 5px solid var(--primary-color);
+  background-color: var(--gray-color);
 }
