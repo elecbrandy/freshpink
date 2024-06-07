@@ -252,19 +252,18 @@ h1 {
 
 h2 {
   font-size: 1.6rem;
-  line-height: 1.8;
+  line-height: 1.6;
 }
 
 h3 {
   font-size: 1.4rem;
-  line-height: 1.6;
+  line-height: 1.4;
 }
 
 h4 {
   font-size: 1.2rem;
-  line-height: 1.4;
+  line-height: 1.2;
 }
-
 h1::after {
 	content: "	h1";
 	font-size: 0.6em;
