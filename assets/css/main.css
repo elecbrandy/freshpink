@@ -314,7 +314,7 @@ p code {
 	padding: 2px 4px 2px 4px;
 	margin: 4px;
 	border-radius: 4px;
-	color: var(--background-color);
+	color: var(--black-color);
 	background-color: var(--code-color);
 	white-space: pre-wrap;
 	word-wrap: break-word;
