@@ -8,8 +8,8 @@ tags = ['info', 'tag1']
 
 <br>
 
-> Color Set
-
+# Color Set
+____
 This theme supports **light/dark mode**.
 You can switch between the modes via the toggle in the top right corner of the header.
 
@@ -73,11 +73,9 @@ You can switch between the modes via the toggle in the top right corner of the h
   </div>
 </div>
 
-
-<br>
 <br>
 
-> CSS code
+## CSS code
 
 This is the CSS that represents the above color settings. If you want to change the color settings, you can do so in `assets/css/main.css`.
 

@@ -8,14 +8,15 @@ tags = ['red']
 
 <br>
 
+# Freshpink
+____
 > What is the FreshPink?
 
 Introducing **FreshPink**, a Hugo blog theme designed specifically for developers embarking on creating or enhancing their development blog. With an emphasis on simplicity and functionality, FreshPink offers a clean and straightforward design, complemented by a vibrant fresh pink color scheme, and packed with features that cater to the unique needs of developer blogs.
 
 <br>
-<br>
 
-> Features
+## Features
 
 - Clean and Straightforward Design
 
@@ -36,15 +37,13 @@ Introducing **FreshPink**, a Hugo blog theme designed specifically for developer
 - Hugo Tagging System Support
 
 <br>
-<br>
 
-> Getting Started
+## Getting Started
 
 To begin using FreshPink for your development blog, follow the installation and customization instructions available on our [**GitHub repository**](https://github.com/your-repo/freshpink-hugo-theme). Dive into the world of blogging with a theme that's as dynamic and vibrant as your ideas.
 
-<br>
+
 <br>
 
 **_Happy blogging!_**
 Your journey to sharing your development insights and projects in a fresh, engaging way starts with FreshPink.
-
