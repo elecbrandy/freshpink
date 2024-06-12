@@ -12,6 +12,7 @@
 	--white-color: #FFFFFF;
 	--black-color: #181818;
 	--dgray-color: #282828;
+	--mgray-color: #e2e2e2;
 	--lgray-color: #f2f2f2;
 }
 
@@ -19,12 +20,14 @@ body[data-theme="light"] {
 	--background-color: var(--white-color);
 	--text-color: var(--black-color);
 	--gray-color: var(--lgray-color);
+	--code-color: var(--mgray-color);
 }
 
 body[data-theme="dark"] {
 	--background-color: var(--black-color);
 	--text-color: var(--white-color);
 	--gray-color: var(--dgray-color);
+	--code-color: var(--mgray-color);
 }
 
 /* >>>>> ================ MAIN_CSS =============== <<<<< */
@@ -308,11 +311,11 @@ div.content blockquote p {
 }
 
 p code {
-	padding: 4px;
+	padding: 2px 4px 2px 4px;
 	margin: 4px;
 	border-radius: 4px;
 	color: var(--background-color);
-	background-color: var(--text-color);
+	background-color: var(--code-color);
 	white-space: pre-wrap;
 	word-wrap: break-word;
 }
