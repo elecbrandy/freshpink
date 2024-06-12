@@ -1,0 +1,16 @@
+@media (max-width: 500px) {
+	.content {
+		min-width: 360px;
+		margin: auto;
+		padding: 20px;
+		box-sizing: border-box;
+	}
+
+	.header-container {
+		padding: 0px 20px;
+	  }
+
+	.pre-title {
+		top: 200px;
+	}
+}
