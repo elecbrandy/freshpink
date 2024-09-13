@@ -8,7 +8,7 @@
 
 /* >>>>> ================ COLOR_VAR =============== <<<<< */
 :root {
-	--primary-color: #FF53B0;
+	--primary-color: #e600ff;
 	--white-color: #FFFFFF;
 	--black-color: #181818;
 	--dgray-color: #282828;
@@ -39,14 +39,15 @@ html {
 }
 
 .container {
-	max-width: 600px;
+	max-width: 540px;
 	margin: 0 auto;
 	padding: 0 20px;
   }
 
 body {
-	max-width: 600px;
+	max-width: 540px;
 	padding: 20px;
+	text-align: left;
 	color: var(--text-color);
 	font-family: var(--content-font-family);
 	letter-spacing: -0.4px;
@@ -73,68 +74,33 @@ a:hover {
 
 /* >>>>> ================ HEADER_CSS =============== <<<<< */
 .main-header {
-	background-color: var(--background-color);
-	font-family: var(--head-font-family);
+	min-width: 540px;
+	margin: 0 auto;
 	font-size: 0.8rem;
 	font-weight: 400;
-	padding: 15px;
+	font-family: var(--head-font-family);
+	background-color: var(--background-color);
 	border-bottom: 1px solid var(--lgray-color);
   }
   
   .main-header nav {
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
-  }
-  
-  .nav-left, .nav-right {
 	list-style: none;
-	padding: 0;
-	margin: 0;
-	display: flex;
-  }
-  
-  .nav-left li, .nav-right li {
-	margin-right: 20px;
+	justify-content: flex-end;
+	align-items: center;
+	margin-left: 14px;
   }
 
-/* >>>>> ================ PRE_CONTENT_CSS =============== <<<<< */
-.pre-content {
-	position: relative;
-	width: 100%;
-	height: 300px;
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-}
-
-.pre-content:before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
-	z-index: 1;
-}
-
-.pre-title {
-	position: absolute;
-	top: 200px;
-	color: white;
-	text-align: center;
-	z-index: 1;
-}
-
-.pre-title h1{
-	line-height: 0;
-}
+  .main-header nav li {
+	margin-left: 14px;
+  }
 
 /* >>>>> ================ MARKDOWN_CSS =============== <<<<< */
 h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0;
-    font-weight: 700;
+	font-family: var(--head-font-family);
+    font-weight: 600;
+	letter-spacing: -0.8px;
 }
 
 h1 {
@@ -243,18 +209,6 @@ hr {
 	color: var(--lgray-color);
 }
 
-/* >>>>> ================ COMMIT_CSS =============== <<<<< */
-.commit {
-	max-width: 100%;
-	margin-top: 60px;
-	margin-bottom: 20px;
-}
-
-.commit img {
-	width: 100%;
-	height: auto;
-}
-
 /* >>>>> ================ LIGHT/DARKMODE_CSS =============== <<<<< */
 #theme-toggle {
 	background: none;
@@ -307,4 +261,15 @@ div.freshquote {
 	padding: 16px;
 	border-left: 5px solid var(--primary-color);
 	background-color: var(--gray-color);
+}
+
+div.commit {
+    width: 100%;
+}
+
+div.commit img {
+    display: block; /* 이미지가 블록 요소로 동작하도록 설정 */
+    margin: 10px auto; /* 이미지의 좌우 여백을 자동으로 설정하여 중앙 정렬 */
+    max-width: 540px; /* 최대 너비를 600px로 제한 */
+    height: auto; /* 이미지의 종횡비를 유지하며 크기를 조정 */
 }

@@ -4,15 +4,8 @@
   {{ partial "head.html" . }}
 </head>
 <body>
-  <header>
     {{ partial "header.html" . }}
-  </header>
-  {{ partial "pre-content.html" . }}
-  <div class="content">
     {{ block "main" . }}{{ end }}
-  </div>
-  <footer>
     {{ partial "footer.html" . }}
-  </footer>
 </body>
 </html>
