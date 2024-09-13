@@ -5,9 +5,10 @@
 <div class="posts-list">
   {{ range first 10 .Site.RegularPages }}
     <div class="post-title">
-      <a href="{{ .RelPermalink }}"> └ {{ .LinkTitle }}</a>
-      <small>{{ .Date.Format "January 2, 2006" }}</small>
+      <a href="{{ .RelPermalink }}">- {{ .LinkTitle }}</a>
+      <small>{{ .Date.Format "2006.01.01" }}</small>
     </div>
   {{ end }}
 </div>
+
 {{ end }}

@@ -11,8 +11,8 @@
 	--primary-color: #e600ff;
 	--white-color: #FFFFFF;
 	--black-color: #181818;
-	--dgray-color: #282828;
-	--mgray-color: #e2e2e2;
+	--dgray-color: #464646;
+	--mgray-color: #828282;
 	--lgray-color: #f2f2f2;
 
 	--head-font-family: "Fira Code", monospace;
@@ -47,7 +47,8 @@ html {
 body {
 	max-width: 540px;
 	padding: 20px;
-	text-align: left;
+	font-size: 11pt;
+	font-weight: 400;
 	color: var(--text-color);
 	font-family: var(--content-font-family);
 	letter-spacing: -0.4px;
@@ -59,7 +60,6 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
 }
 
 a {
@@ -72,6 +72,16 @@ a:hover {
 	text-decoration: none;
 }
 
+
+div.post-title {
+	font-family: var(--head-font-family);
+	margin-bottom: 8px;
+}
+
+div.post-title small {
+	color: var(--mgray-color);
+}
+
 /* >>>>> ================ HEADER_CSS =============== <<<<< */
 .main-header {
 	min-width: 540px;
@@ -80,19 +90,17 @@ a:hover {
 	font-weight: 400;
 	font-family: var(--head-font-family);
 	background-color: var(--background-color);
-	border-bottom: 1px solid var(--lgray-color);
+	border-bottom: 1px solid var(--mgray-color);
   }
   
   .main-header nav {
 	display: flex;
 	list-style: none;
-	justify-content: flex-end;
-	align-items: center;
-	margin-left: 14px;
+	justify-content: flex-start;
   }
 
   .main-header nav li {
-	margin-left: 14px;
+	margin-right: 14px;
   }
 
 /* >>>>> ================ MARKDOWN_CSS =============== <<<<< */
@@ -128,29 +136,32 @@ h1::after {
 	content: "	h1";
 	font-size: 0.6em;
 	font-weight: 300;
-	color: #666;
+	color: var(--dgray-color);
 }
 
 h2::after {
 	content: "	h2";
 	font-size: 0.6em;
 	font-weight: 300;
-	color: #666;
+	color: var(--dgray-color);
 }
 
 h3::after {
 	content: "	h3";
 	font-size: 0.6em;
 	font-weight: 300;
-	color: #666;
+	color: var(--dgray-color);
 }
 
 h4::after {
 	content: "	h4";
 	font-size: 0.6em;
 	font-weight: 300;
-	color: #666;
+	color: var(--dgray-color);
 }
+
+
+
 
 
 div.content blockquote {
@@ -223,6 +234,7 @@ hr {
 
 /* >>>>> ================ FOOTER_CSS =============== <<<<< */
 footer {
+	font-family: var(--head-font-family);
 	font-size: 10pt;
 	color: var(--text-color);
 	margin-top: 20px;
@@ -268,8 +280,8 @@ div.commit {
 }
 
 div.commit img {
-    display: block; /* 이미지가 블록 요소로 동작하도록 설정 */
-    margin: 10px auto; /* 이미지의 좌우 여백을 자동으로 설정하여 중앙 정렬 */
-    max-width: 540px; /* 최대 너비를 600px로 제한 */
-    height: auto; /* 이미지의 종횡비를 유지하며 크기를 조정 */
+    display: block;
+    margin: 16px auto;
+    max-width: 540px;
+    height: auto;
 }
