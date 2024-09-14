@@ -3,126 +3,70 @@
 <head>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<title>About | FreshPink</title>
-
-      <link rel="stylesheet" href="/freshpink/css/main.min.02abbfb0a2c7f41518fed9daf0344974a730e8d71a044450f60893b79a3ff522.css" integrity="sha256-Aqu/sKLH9BUY/tna8DRJdKcw6NcaBERQ9giTt5o/9SI=" crossorigin="anonymous">
-      <link rel="stylesheet" href="/freshpink/css/min700.min.2bcf847d60d198d878bbf49b39374a02cdc7cd4e66411bfa42ada12fe8b580ba.css" integrity="sha256-K8&#43;EfWDRmNh4u/SbOTdKAs3HzU5mQRv6Qq2hL&#43;i1gLo=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/reset.css">
+<title>about | FreshPink</title>
 
 
-      <script src="/freshpink/js/main.0740a53bb4495dfc0d897c89f56fe801f29d1ad0d7e20f51491e421debb12f67.js" integrity="sha256-B0ClO7RJXfwNiXyJ9W/oAfKdGtDX4g9RSR5CHeuxL2c=" crossorigin="anonymous"></script>
 
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6vP0kLaVwmS/tB1lCew8HlB/iMDmD4B9Vq3OU9bfXjMWmWrARyAZF9a3F7sKwDx" crossorigin="anonymous">
-
-
-
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <header class="header-other">
-	<div class="header-container">
-		<div class="header-title">
-			<a href="https://elecbrandy.github.io/freshpink/">FreshPink</a>
-	  	</div>
-	  	<ul class="header-menu">
-			<li><a href="https://elecbrandy.github.io/freshpink//tags">TAGS</a></li>
-			<li><a href="https://elecbrandy.github.io/freshpink//about">ABOUT</a></li>
-			<button id="theme-toggle" aria-label="Toggle theme">
-				<img src="/dark.svg" alt="Dark mode" id="dark-icon">
-				<img src="/light.svg" alt="Light mode" id="light-icon">
-			  </button>
-		</ul>
-	</div>
-	
-		<div class="progress-bar"></div>
-  	
-</header>
-
+    <header class="main-header">
+	<nav>
+	  <li><a href="/">/FreshPink</a></li>
+	  <li><a href="/tags">/tags</a></li>
+	  <li><a href="/about">/about</a></li>
+	  <li id="theme-toggle" style="cursor: pointer;">/todark</li>
+	</nav>
   </header>
   
-
-  <div class="content">
+  <script>
+	document.addEventListener('DOMContentLoaded', function() {
+	  const themeToggle = document.getElementById('theme-toggle');
+	  
+	  
+	  let currentTheme = localStorage.getItem('theme') || 'light';
+  
+	  
+	  document.body.setAttribute('data-theme', currentTheme);
+	  themeToggle.textContent = currentTheme === 'dark' ? '/tolight' : '/todark';
+  
+	  
+	  function toggleTheme() {
+		
+		const newTheme = document.body.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+  
+		
+		document.body.setAttribute('data-theme', newTheme);
+  
+		
+		localStorage.setItem('theme', newTheme);
+  
+		
+		themeToggle.textContent = newTheme === 'dark' ? '/tolight' : '/todark';
+	  }
+  
+	  
+	  themeToggle.addEventListener('click', toggleTheme);
+	});
+  </script>
+  
     
 <div class="list">
-  <h4>About</h4>
-  <br>
-<blockquote>
-<p>EXAMPLE PAGE</p>
-</blockquote>
-<br>
-<h2 id="freshpink">FreshPink</h2>
+  <h4 id="-about">👤 /about</h4>
 <hr>
-<ul>
-<li><strong>Email:</strong> <a href="mailto:freshpink@example.com">freshpink@example.com</a></li>
-<li><strong>LinkedIn:</strong> linkedin.com/in/freshpink</li>
-<li><strong>GitHub:</strong> github.com/freshpink</li>
-</ul>
-<br>
-<br>
-<h2 id="skills">Skills</h2>
-<hr>
-<ul>
-<li><strong>Languages:</strong> Python, JavaScript, Java, C#</li>
-<li><strong>Frameworks/Libraries:</strong> React, Django, Node.js, .NET</li>
-<li><strong>Databases:</strong> MySQL, MongoDB, PostgreSQL</li>
-<li><strong>Tools:</strong> Docker, Git, Jenkins, AWS</li>
-<li><strong>Others:</strong> RESTful API design, Agile methodologies, TDD</li>
-</ul>
-<br>
-<br>
-<h2 id="experience">Experience</h2>
-<hr>
-<p><strong>Senior Software Developer, Tech Solutions Inc.</strong></p>
-<ul>
-<li>July 2015 - February 2019</li>
-<li>Led the development of a scalable web application,&hellip;</li>
-<li>Implemented RESTful services and APIs, improving&hellip;</li>
-<li>Mentored junior developers, enhancing team skills&hellip;</li>
-</ul>
-<p><strong>Software Developer, Innovative Start-up</strong></p>
-<ul>
-<li>July 2015 - February 2019</li>
-<li>Developed and maintained several web applications using React and Node.js&hellip;</li>
-<li>Collaborated with cross-functional teams to define, design&hellip;</li>
-<li>Optimized application performance&hellip;</li>
-</ul>
-<br>
-<br>
-<h2 id="education">Education</h2>
-<hr>
-<p><strong>Bachelor of Science in Computer Science</strong>
-University of Technology - San Franci&hellip;
-September 2011 - Jun&hellip;</p>
-<br>
-<br>
-<h2 id="projects">Projects</h2>
-<hr>
-<p><strong>Project Name: Inventory Management System</strong></p>
-<ul>
-<li>Developed a comprehensive inventory &hellip;</li>
-<li>Implemented features such as real-t&hellip;</li>
-</ul>
-<p><strong>Project Name: Personal Portfolio Website</strong></p>
-<ul>
-<li>Designed and developed a personal por&hellip;</li>
-<li>Utilized modern web technologies like HTML5&hellip;</li>
-</ul>
-<br>
-<br>
-<h2 id="certifications">Certifications</h2>
-<hr>
-<ul>
-<li>Certified AWS Solutions Architect - Asso&hellip;</li>
-<li>Certified ScrumMaster CS&hellip;</li>
-</ul>
+<p>make yout &lsquo;about&rsquo; whatever you want</p>
 
   <div class="page-links">
     
   </div>
 </div>
 
-  </div>
-  <footer>
     
 
 <script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
@@ -132,6 +76,5 @@ September 2011 - Jun&hellip;</p>
   textColor: '#fff'
 })</script>
 
-  </footer>
 </body>
 </html>

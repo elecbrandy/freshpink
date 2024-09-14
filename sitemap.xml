@@ -2,43 +2,33 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://elecbrandy.github.io/freshpink/posts/post-5/</loc>
-    <lastmod>2024-01-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://elecbrandy.github.io/freshpink/posts/</loc>
-    <lastmod>2024-01-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://elecbrandy.github.io/freshpink/tags/tag1/</loc>
-    <lastmod>2024-01-05T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://elecbrandy.github.io/freshpink/posts/post-4/</loc>
     <lastmod>2024-01-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://elecbrandy.github.io/freshpink/tags/tag2/</loc>
+    <loc>https://elecbrandy.github.io/freshpink/</loc>
+    <lastmod>2024-01-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://elecbrandy.github.io/freshpink/posts/</loc>
+    <lastmod>2024-01-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://elecbrandy.github.io/freshpink/tags/tag_b/</loc>
+    <lastmod>2024-01-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://elecbrandy.github.io/freshpink/tags/</loc>
     <lastmod>2024-01-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://elecbrandy.github.io/freshpink/posts/post-3/</loc>
     <lastmod>2024-01-03T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://elecbrandy.github.io/freshpink/tags/tag_a/</loc>
+    <lastmod>2024-01-03T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://elecbrandy.github.io/freshpink/posts/post-2/</loc>
     <lastmod>2024-01-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://elecbrandy.github.io/freshpink/tags/info/</loc>
-    <lastmod>2024-01-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://elecbrandy.github.io/freshpink/</loc>
-    <lastmod>2024-01-01T08:00:00-07:00</lastmod>
   </url><url>
     <loc>https://elecbrandy.github.io/freshpink/posts/post-1/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://elecbrandy.github.io/freshpink/tags/red/</loc>
-    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://elecbrandy.github.io/freshpink/tags/</loc>
-    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://elecbrandy.github.io/freshpink/about/</loc>
-    <lastmod>1999-10-26T00:00:00+00:00</lastmod>
   </url>
 </urlset>

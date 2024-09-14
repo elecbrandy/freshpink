@@ -3,142 +3,117 @@
 <head>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="/css/reset.css">
 <title>02. Color set | FreshPink</title>
 
-      <link rel="stylesheet" href="/freshpink/css/main.min.02abbfb0a2c7f41518fed9daf0344974a730e8d71a044450f60893b79a3ff522.css" integrity="sha256-Aqu/sKLH9BUY/tna8DRJdKcw6NcaBERQ9giTt5o/9SI=" crossorigin="anonymous">
-      <link rel="stylesheet" href="/freshpink/css/min700.min.2bcf847d60d198d878bbf49b39374a02cdc7cd4e66411bfa42ada12fe8b580ba.css" integrity="sha256-K8&#43;EfWDRmNh4u/SbOTdKAs3HzU5mQRv6Qq2hL&#43;i1gLo=" crossorigin="anonymous">
 
 
-      <script src="/freshpink/js/main.0740a53bb4495dfc0d897c89f56fe801f29d1ad0d7e20f51491e421debb12f67.js" integrity="sha256-B0ClO7RJXfwNiXyJ9W/oAfKdGtDX4g9RSR5CHeuxL2c=" crossorigin="anonymous"></script>
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6vP0kLaVwmS/tB1lCew8HlB/iMDmD4B9Vq3OU9bfXjMWmWrARyAZF9a3F7sKwDx" crossorigin="anonymous">
-
-
-
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <header class="header-other">
-	<div class="header-container">
-		<div class="header-title">
-			<a href="https://elecbrandy.github.io/freshpink/">FreshPink</a>
-	  	</div>
-	  	<ul class="header-menu">
-			<li><a href="https://elecbrandy.github.io/freshpink//tags">TAGS</a></li>
-			<li><a href="https://elecbrandy.github.io/freshpink//about">ABOUT</a></li>
-			<button id="theme-toggle" aria-label="Toggle theme">
-				<img src="/dark.svg" alt="Dark mode" id="dark-icon">
-				<img src="/light.svg" alt="Light mode" id="light-icon">
-			  </button>
-		</ul>
-	</div>
-	
-		<div class="progress-bar"></div>
-  	
-</header>
-
+    <header class="main-header">
+	<nav>
+	  <li><a href="/">/FreshPink</a></li>
+	  <li><a href="/tags">/tags</a></li>
+	  <li><a href="/about">/about</a></li>
+	  <li id="theme-toggle" style="cursor: pointer;">/todark</li>
+	</nav>
   </header>
   
+  <script>
+	document.addEventListener('DOMContentLoaded', function() {
+	  const themeToggle = document.getElementById('theme-toggle');
+	  
+	  
+	  let currentTheme = localStorage.getItem('theme') || 'light';
+  
+	  
+	  document.body.setAttribute('data-theme', currentTheme);
+	  themeToggle.textContent = currentTheme === 'dark' ? '/tolight' : '/todark';
+  
+	  
+	  function toggleTheme() {
+		
+		const newTheme = document.body.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+  
+		
+		document.body.setAttribute('data-theme', newTheme);
+  
+		
+		localStorage.setItem('theme', newTheme);
+  
+		
+		themeToggle.textContent = newTheme === 'dark' ? '/tolight' : '/todark';
+	  }
+  
+	  
+	  themeToggle.addEventListener('click', toggleTheme);
+	});
+  </script>
+  
     
-        <div class="pre-content" style="background-image: url('https://raw.githubusercontent.com/ElecBrandy/freshpink/gh-pages/basic.png');"></div>
-        <div class="pre-title">
-            
-            
-            <time datetime="2024-01-02T00:00:00&#43;00:00">January 2, 2024</time>
-            <h1>02. Color set</h1>
-        </div>
+  <aside class="toc">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-color-set">1. Color set</a></li>
+  </ul>
+</nav>
+  </aside>
+  <div class="featured-container">
     
-
-
-  <div class="content">
+      <div class="featured-image">
+        <img src="https://raw.githubusercontent.com/ElecBrandy/freshpink/gh-pages/basic.png" alt="Featured Image for 02. Color set">
+      </div>
     
+    <div class="overlay-text">
+      <small>2024.01.01</small>
+      <div class="singleTitle">02. Color set</div>
+    </div>
+  </div>
   <br>
-<h1 id="color-set">Color Set</h1>
-<hr>
 <p>This theme supports <strong>light/dark mode</strong>.
-You can switch between the modes via the toggle in the top right corner of the header.</p>
-<h2 id="root">@root</h2>
-<div style="margin: 10px 0px;">
-  <div style="padding: 10px; background-color: #FF53B0;">
-      <strong>primary-color</strong>
-  #FF53B0
-  </div>
-  <div style="padding: 10px; color: #181818; background-color: #FFFFFF;">
-      <strong>white-color</strong>
-  #FFFFFF
-  </div>
-  <div style="padding: 10px; color: #181818; background-color: #f2f2f2;">
-      <strong>lgray-color</strong>
-  #f2f2f2
-  </div>
-  <div style="padding: 10px; color: #FFFFFF; background-color: #282828;">
-      <strong>dgray-color</strong>
-  #282828
-  </div>
-  <div style="padding: 10px; color: #FFFFFF; background-color: #181818;">
-      <strong>black-color</strong>
-  #181818
-  </div>
-</div>
+You can switch between the modes via the toggle in the main header&rsquo;s <code>tolight</code> or <code>todark</code>.</p>
 <br>
-<h2 id="light">@light</h2>
-<div style="margin: 10px 0px;">
-  <div style="padding: 10px; color: #181818; background-color: #FFFFFF;">
-      <strong>background-color</strong>
-  #FFFFFF
-  </div>
-  <div style="padding: 10px; color: #FFFFFF; background-color: #282828;">
-      <strong>gray-color</strong>
-  #282828
-  </div>
-  <div style="padding: 10px; color: #FFFFFF; background-color: #181818;">
-      <strong>text-color</strong>
-  #181818
-  </div>
-</div>
 <br>
-<h2 id="dark">@dark</h2>
-<div style="margin: 10px 0px;">
-  <div style="padding: 10px; color: #FFFFFF; background-color: #181818;">
-      <strong>background-color</strong>
-  #181818
-  </div>
-  <div style="padding: 10px; color: #181818; background-color: #f2f2f2;">
-      <strong>gray-color</strong>
-  #f2f2f2
-  </div>
-  <div style="padding: 10px; color: #181818; background-color: #FFFFFF;">
-      <strong>text-color</strong>
-  #FFFFFF
-  </div>
-</div>
-<br>
-<h2 id="css-code">CSS code</h2>
-<p>This is the CSS that represents the above color settings. If you want to change the color settings, you can do so in <code>assets/css/main.css</code>.</p>
+<h2 id="1-color-set">1. Color set</h2>
+<hr>
+<p>Color-related modifications can be made at the top of <code>asset/css/main.css</code>. Here you can also set specific colors for lightmode and darkmode if you want.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>:<span style="color:#a6e22e">root</span> {
-</span></span><span style="display:flex;"><span>  --primary-color: <span style="color:#ae81ff">#FF53B0</span>;
-</span></span><span style="display:flex;"><span>  --white-color: <span style="color:#ae81ff">#FFFFFF</span>;
-</span></span><span style="display:flex;"><span>  --black-color: <span style="color:#ae81ff">#181818</span>;
-</span></span><span style="display:flex;"><span>  --dgray-color: <span style="color:#ae81ff">#282828</span>;
-</span></span><span style="display:flex;"><span>  --lgray-color: <span style="color:#ae81ff">#f2f2f2</span>;
+</span></span><span style="display:flex;"><span>	--primary-color: <span style="color:#ae81ff">#e600ff</span>;
+</span></span><span style="display:flex;"><span>	--white-color: <span style="color:#ae81ff">#FFFFFF</span>;
+</span></span><span style="display:flex;"><span>	--black-color: <span style="color:#ae81ff">#181818</span>;
+</span></span><span style="display:flex;"><span>	--dgray-color: <span style="color:#ae81ff">#464646</span>;
+</span></span><span style="display:flex;"><span>	--mgray-color: <span style="color:#ae81ff">#828282</span>;
+</span></span><span style="display:flex;"><span>	--lgray-color: <span style="color:#ae81ff">#f2f2f2</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	--background-color: <span style="color:#a6e22e">var</span>(<span style="color:#f92672">--</span><span style="color:#66d9ef">white</span><span style="color:#f92672">-</span><span style="color:#66d9ef">color</span>);
+</span></span><span style="display:flex;"><span>	--text-color: <span style="color:#a6e22e">var</span>(<span style="color:#f92672">--</span><span style="color:#66d9ef">black</span><span style="color:#f92672">-</span><span style="color:#66d9ef">color</span>);
+</span></span><span style="display:flex;"><span>	--gray-color: <span style="color:#a6e22e">var</span>(<span style="color:#f92672">--</span>lgray<span style="color:#f92672">-</span><span style="color:#66d9ef">color</span>);
+</span></span><span style="display:flex;"><span>	--code-color: <span style="color:#a6e22e">var</span>(<span style="color:#f92672">--</span>mgray<span style="color:#f92672">-</span><span style="color:#66d9ef">color</span>);
 </span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">body</span><span style="color:#f92672">[</span><span style="color:#f92672">data-theme</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;light&#34;</span><span style="color:#f92672">]</span> {
-</span></span><span style="display:flex;"><span>  --background-color: <span style="color:#a6e22e">var</span>(<span style="color:#f92672">--</span><span style="color:#66d9ef">white</span><span style="color:#f92672">-</span><span style="color:#66d9ef">color</span>);
-</span></span><span style="display:flex;"><span>  --text-color: <span style="color:#a6e22e">var</span>(<span style="color:#f92672">--</span><span style="color:#66d9ef">black</span><span style="color:#f92672">-</span><span style="color:#66d9ef">color</span>);
-</span></span><span style="display:flex;"><span>  --gray-color: <span style="color:#a6e22e">var</span>(<span style="color:#f92672">--</span>lgray<span style="color:#f92672">-</span><span style="color:#66d9ef">color</span>);
+</span></span><span style="display:flex;"><span>	--background-color: <span style="color:#a6e22e">var</span>(<span style="color:#f92672">--</span><span style="color:#66d9ef">white</span><span style="color:#f92672">-</span><span style="color:#66d9ef">color</span>);
+</span></span><span style="display:flex;"><span>	--text-color: <span style="color:#a6e22e">var</span>(<span style="color:#f92672">--</span><span style="color:#66d9ef">black</span><span style="color:#f92672">-</span><span style="color:#66d9ef">color</span>);
+</span></span><span style="display:flex;"><span>	--gray-color: <span style="color:#a6e22e">var</span>(<span style="color:#f92672">--</span>lgray<span style="color:#f92672">-</span><span style="color:#66d9ef">color</span>);
+</span></span><span style="display:flex;"><span>	--code-color: <span style="color:#a6e22e">var</span>(<span style="color:#f92672">--</span>mgray<span style="color:#f92672">-</span><span style="color:#66d9ef">color</span>);
 </span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  
 </span></span><span style="display:flex;"><span><span style="color:#f92672">body</span><span style="color:#f92672">[</span><span style="color:#f92672">data-theme</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;dark&#34;</span><span style="color:#f92672">]</span> {
-</span></span><span style="display:flex;"><span>  --background-color: <span style="color:#a6e22e">var</span>(<span style="color:#f92672">--</span><span style="color:#66d9ef">black</span><span style="color:#f92672">-</span><span style="color:#66d9ef">color</span>);
-</span></span><span style="display:flex;"><span>  --text-color: <span style="color:#a6e22e">var</span>(<span style="color:#f92672">--</span><span style="color:#66d9ef">white</span><span style="color:#f92672">-</span><span style="color:#66d9ef">color</span>);
-</span></span><span style="display:flex;"><span>  --gray-color: <span style="color:#a6e22e">var</span>(<span style="color:#f92672">--</span>dgray<span style="color:#f92672">-</span><span style="color:#66d9ef">color</span>);
+</span></span><span style="display:flex;"><span>	--background-color: <span style="color:#a6e22e">var</span>(<span style="color:#f92672">--</span><span style="color:#66d9ef">black</span><span style="color:#f92672">-</span><span style="color:#66d9ef">color</span>);
+</span></span><span style="display:flex;"><span>	--text-color: <span style="color:#a6e22e">var</span>(<span style="color:#f92672">--</span><span style="color:#66d9ef">white</span><span style="color:#f92672">-</span><span style="color:#66d9ef">color</span>);
+</span></span><span style="display:flex;"><span>	--gray-color: <span style="color:#a6e22e">var</span>(<span style="color:#f92672">--</span>dgray<span style="color:#f92672">-</span><span style="color:#66d9ef">color</span>);
+</span></span><span style="display:flex;"><span>	--code-color: <span style="color:#a6e22e">var</span>(<span style="color:#f92672">--</span>mgray<span style="color:#f92672">-</span><span style="color:#66d9ef">color</span>);
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div>
+</span></span></code></pre></div><br>
+<br>
 
-  </div>
-  <footer>
+
     
 
 <script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
@@ -148,6 +123,5 @@ You can switch between the modes via the toggle in the top right corner of the h
   textColor: '#fff'
 })</script>
 
-  </footer>
 </body>
 </html>

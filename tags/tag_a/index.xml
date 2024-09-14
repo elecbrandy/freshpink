@@ -1,20 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on FreshPink</title>
-    <link>https://elecbrandy.github.io/freshpink/posts/</link>
-    <description>Recent content in Posts on FreshPink</description>
+    <title>tag_a on FreshPink</title>
+    <link>https://elecbrandy.github.io/freshpink/tags/tag_a/</link>
+    <description>Recent content in tag_a on FreshPink</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 04 Jan 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://elecbrandy.github.io/freshpink/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>04. Shortcuts</title>
-      <link>https://elecbrandy.github.io/freshpink/posts/post-4/</link>
-      <pubDate>Thu, 04 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://elecbrandy.github.io/freshpink/posts/post-4/</guid>
-      <description>&lt;br&gt;&#xA;&lt;p&gt;On this page, we&amp;rsquo;ll introduce you to shortcuts that &lt;strong&gt;freshPink&lt;/strong&gt; supports for pages. We&amp;rsquo;ll be adding more of these in the future.&lt;/p&gt;&#xA;&lt;br&gt;&#xA;&lt;br&gt;&#xA;&lt;h2 id=&#34;1-alert&#34;&gt;1. alert&lt;/h2&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;This works similarly to a button that lets you jump to a link of your choice. You can associate this with a specific tag, home, post, etc. I&amp;rsquo;m actually not sure I like the design that much. more..&lt;/p&gt;&#xA;&lt;h3 id=&#34;1-1-setting&#34;&gt;1-1. setting&lt;/h3&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{{&amp;lt; &lt;span style=&#34;color:#f92672&#34;&gt;alert&lt;/span&gt; &amp;gt;}}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;href&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://example.org/&amp;#34;&lt;/span&gt;&amp;gt;placeholder&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt;&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{{&amp;lt; /&lt;span style=&#34;color:#f92672&#34;&gt;alert&lt;/span&gt; &amp;gt;}}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;br&gt;&#xA;&lt;h3 id=&#34;1-2-example&#34;&gt;1-2. example&lt;/h3&gt;&#xA;&lt;div class=&#34;alert&#34;&gt;&#xA;    &lt;span&gt;&#xA;&#x9;&lt;a href=&#34;https://elecbrandy.github.io/freshpink/&#34;&gt;placeholder&lt;/a&gt;&#xA;&lt;/span&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;br&gt;&#xA;&lt;br&gt;&#xA;&lt;h2 id=&#34;2-github-log-img&#34;&gt;2. github log img&lt;/h2&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;With this feature, you can attach images to your GitHub account&amp;rsquo;s commit and push logs. The account is specified in the githubUsername part of the &lt;code&gt;config.toml&lt;/code&gt; file. and If we wanted to change the colorset for this image, we could go into /layouts/shortcodes/githubcommit.html and just change the color code in the middle (the part &lt;code&gt;here!!!&lt;/code&gt;).&lt;/p&gt;</description>
-    </item>
+    <lastBuildDate>Wed, 03 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://elecbrandy.github.io/freshpink/tags/tag_a/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>03. Features</title>
       <link>https://elecbrandy.github.io/freshpink/posts/post-3/</link>

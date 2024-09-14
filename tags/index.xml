@@ -1,40 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on FreshPink</title>
+    <title>tags on FreshPink</title>
     <link>https://elecbrandy.github.io/freshpink/tags/</link>
-    <description>Recent content in Tags on FreshPink</description>
+    <description>Recent content in tags on FreshPink</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 05 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 04 Jan 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://elecbrandy.github.io/freshpink/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Tag1</title>
-      <link>https://elecbrandy.github.io/freshpink/tags/tag1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://elecbrandy.github.io/freshpink/tags/tag1/</guid>
-      <description></description>
+      <title>tag_b</title>
+      <link>https://elecbrandy.github.io/freshpink/tags/tag_b/</link>
+      <pubDate>Thu, 04 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://elecbrandy.github.io/freshpink/tags/tag_b/</guid>
+      <description>&lt;h4 id=&#34;-tagstag_b&#34;&gt;🏷️ /tags/tag_b&lt;/h4&gt;&#xA;&lt;hr&gt;</description>
     </item>
     <item>
-      <title>Tag2</title>
-      <link>https://elecbrandy.github.io/freshpink/tags/tag2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://elecbrandy.github.io/freshpink/tags/tag2/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Info</title>
-      <link>https://elecbrandy.github.io/freshpink/tags/info/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://elecbrandy.github.io/freshpink/tags/info/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Red</title>
-      <link>https://elecbrandy.github.io/freshpink/tags/red/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://elecbrandy.github.io/freshpink/tags/red/</guid>
-      <description></description>
+      <title>tag_a</title>
+      <link>https://elecbrandy.github.io/freshpink/tags/tag_a/</link>
+      <pubDate>Wed, 03 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://elecbrandy.github.io/freshpink/tags/tag_a/</guid>
+      <description>&lt;h4 id=&#34;-tagstag_a&#34;&gt;🏷️ /tags/tag_a&lt;/h4&gt;&#xA;&lt;hr&gt;</description>
     </item>
   </channel>
 </rss>
