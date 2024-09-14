@@ -1,0 +1,12 @@
+<div class="series">
+  <details>
+    <summary>{{ .Get "title" }}</summary>
+    <ul>
+      {{ $series := .Get "series" }}
+      {{ $data := index site.Data.series $series }}
+      {{ range $data.items }}
+      <li>-<a href="{{ .link }}">{{ .name }}</a></li>
+      {{ end }}
+    </ul>
+  </details>
+</div>

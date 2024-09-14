@@ -1,0 +1,14 @@
+name = 'FreshPink'
+license = 'MIT'
+licenselink = 'https://github.com/ElecBrandy/freshpink'
+description = 'minimal hugo blog'
+
+# The home page of the theme, where the source can be found
+homepage = 'https://github.com/ElecBrandy/freshpink'
+
+# If you have a running demo of the theme
+demosite = 'https://elecbrandy.github.io/freshpink/'
+
+# If the theme has a single author
+[author]
+  name = 'elecbrandy'
