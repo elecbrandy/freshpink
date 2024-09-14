@@ -1,18 +1,38 @@
-# freshPink
++++
+title = '01. freshPink'
+date = 2024-01-01
+draft = false
+featured_image = "https://raw.githubusercontent.com/ElecBrandy/freshpink/gh-pages/basic.png"
+tags = ['tag_a']
++++
 
-![tn.png](https://raw.githubusercontent.com/ElecBrandy/freshpink/main/images/tn.png)
-![screenshot.png](https://raw.githubusercontent.com/elecbrandy/freshpink/main/images/screenshot.png)
+<br>
 
-Hello! Let me introduce the **freshPink** theme!  
+After enjoying several Hugo themes, I tried to develop a theme that suited my needs, refined it, and evolved it into this theme.  
 
-## Demo Site
-Here is the demo site where you can find a simple example and a detailed tutorial.
-[Go to Demo site](https://elecbrandy.github.io/freshpink/).
+While it's simple and static page-based, the theme makes it easy to categorize your articles with tags and helps you manage your blog with multiple shortcut.
 
-## Installation
+<br>
+<br>
+
+## 1. Getting Started
+____
+
+To begin using freshPink for your development blog, follow the installation and customization instructions available on our [**GitHub repository**](https://github.com/your-repo/freshpink-hugo-theme). Dive into the world of blogging with a theme that's as dynamic and vibrant as your ideas.
+
+<br>
+
+### 1-1. Demo Site
+Here is the demo site where you can find a simple example and a detailed tutorial.  
+
+> [Go to Demo site](https://elecbrandy.github.io/freshpink/).
+
+<br>
+
+### 1-2. Installation
 There are two methods to install the freshPink theme. You can either use Git submodules (recommended for easy updates) or download it directly. Unless there's a specific reason, we recommend using the submodule method.
 
-### Method 1: Install via Git Submodule (Recommended)
+#### 1-2-1. Method 1: Install via Git Submodule (Recommended)
 
 1. **Navigate to Your Hugo Site Directory**:
    Open a terminal and navigate to the root directory of your Hugo site. If you haven’t created a Hugo site yet, you can do so with the following command:
@@ -42,7 +62,9 @@ theme = "freshpink"
 hugo server
 ```
 
-### Method 2: Download and Install Manually
+<br>
+
+#### 1-2-2. Method 2: Download and Install Manually
 
 1. **Download the Theme**:
    Go to the [FreshPink GitHub repository](https://github.com/ElecBrandy/freshpink) and download the theme as a ZIP file.
@@ -60,12 +82,24 @@ hugo server
 hugo server
 ```
 
-## Customizing the Theme
+<br>
+<br>
+
+## 2. Customizing the Theme
 
 The freshPink theme is designed to be easily customizable. You can modify the styles, layouts, and content as needed to fit your site. Follow the tutorial on the demo site and try customizing it yourself!
 
-## Need Help?
+<br>
+<br>
+
+## 3. Need Help?
 
 If you encounter any issues or have questions, feel free to open an issue on the [GitHub repository](https://github.com/ElecBrandy/freshpink/issues).
 
-Thank you for choosing the freshPink theme! :)
+<br>
+<br>
+
+> Your journey to sharing your development insights and projects in a fresh, engaging way starts with freshPink.
+
+<br>
+<br>

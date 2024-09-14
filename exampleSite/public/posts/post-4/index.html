@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/freshpink/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=freshpink/livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="/css/reset.css">
+<title>04. Shortcuts | FreshPink</title>
+
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+	<nav>
+	  <li><a href="/">/FreshPink</a></li>
+	  <li><a href="/tags">/tags</a></li>
+	  <li><a href="/about">/about</a></li>
+	  <li id="theme-toggle" style="cursor: pointer;">/todark</li>
+	</nav>
+  </header>
+  
+  <script>
+	document.addEventListener('DOMContentLoaded', function() {
+	  const themeToggle = document.getElementById('theme-toggle');
+	  
+	  
+	  let currentTheme = localStorage.getItem('theme') || 'light';
+  
+	  
+	  document.body.setAttribute('data-theme', currentTheme);
+	  themeToggle.textContent = currentTheme === 'dark' ? '/tolight' : '/todark';
+  
+	  
+	  function toggleTheme() {
+		
+		const newTheme = document.body.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+  
+		
+		document.body.setAttribute('data-theme', newTheme);
+  
+		
+		localStorage.setItem('theme', newTheme);
+  
+		
+		themeToggle.textContent = newTheme === 'dark' ? '/tolight' : '/todark';
+	  }
+  
+	  
+	  themeToggle.addEventListener('click', toggleTheme);
+	});
+  </script>
+  
+    
+  <aside class="toc">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-alert">1. alert</a>
+      <ul>
+        <li><a href="#1-1-setting">1-1. setting</a></li>
+        <li><a href="#1-2-example">1-2. example</a></li>
+      </ul>
+    </li>
+    <li><a href="#2-github-log-img">2. github log img</a>
+      <ul>
+        <li><a href="#2-1-setting">2-1. setting</a></li>
+        <li><a href="#2-2-example">2-2. example</a></li>
+      </ul>
+    </li>
+    <li><a href="#3-serieshtml">3. series.html</a>
+      <ul>
+        <li><a href="#3-1-setting">3-1. setting</a></li>
+        <li><a href="#3-2-example">3-2. example</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </aside>
+  <div class="featured-container">
+    
+      <div class="featured-image">
+        <img src="https://raw.githubusercontent.com/ElecBrandy/freshpink/gh-pages/basic.png" alt="Featured Image for 04. Shortcuts">
+      </div>
+    
+    <div class="overlay-text">
+      <small>2024.01.01</small>
+      <div class="singleTitle">04. Shortcuts</div>
+    </div>
+  </div>
+  <br>
+<p>On this page, we&rsquo;ll introduce you to shortcuts that <strong>freshPink</strong> supports for pages. We&rsquo;ll be adding more of these in the future.</p>
+<br>
+<br>
+<h2 id="1-alert">1. alert</h2>
+<hr>
+<p>This works similarly to a button that lets you jump to a link of your choice. You can associate this with a specific tag, home, post, etc. I&rsquo;m actually not sure I like the design that much. more..</p>
+<h3 id="1-1-setting">1-1. setting</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>{{&lt; <span style="color:#f92672">alert</span> &gt;}}
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://example.org/&#34;</span>&gt;placeholder&lt;/<span style="color:#f92672">a</span>&gt;
+</span></span><span style="display:flex;"><span>{{&lt; /<span style="color:#f92672">alert</span> &gt;}}
+</span></span></code></pre></div><br>
+<h3 id="1-2-example">1-2. example</h3>
+<div class="alert">
+    <span>
+	<a href="https://elecbrandy.github.io/freshpink/">placeholder</a>
+</span>
+</div>
+
+<br>
+<br>
+<h2 id="2-github-log-img">2. github log img</h2>
+<hr>
+<p>With this feature, you can attach images to your GitHub account&rsquo;s commit and push logs. The account is specified in the githubUsername part of the <code>config.toml</code> file. and If we wanted to change the colorset for this image, we could go into /layouts/shortcodes/githubcommit.html and just change the color code in the middle (the part <code>here!!!</code>).</p>
+<h3 id="2-1-setting">2-1. setting</h3>
+<h4 id="set-user-name">set user name</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[<span style="color:#a6e22e">params</span>]
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">githubUsername</span> = <span style="color:#e6db74">&#34;your_username&#34;</span>
+</span></span></code></pre></div><h4 id="set-color">set color</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;commit&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>	&lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://ghchart.rshah.org/here!!!/{{ .Site.Params.githubUsername }}&#34;</span>/&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span></code></pre></div><h3 id="2-2-example">2-2. example</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>{{&lt; <span style="color:#f92672">githubcommit</span> &gt;}}
+</span></span></code></pre></div><div class="commit">
+    <img src="https://ghchart.rshah.org/49344b/elecbrandy"/>
+</div>
+<br>
+<br>
+<h2 id="3-serieshtml">3. series.html</h2>
+<hr>
+<p>Sometimes there are articles that are difficult to categorize using tags alone. In this case, I wanted to organize certain articles into a series, for example, the “freshPink.” Creating a series would make it easier to manage related articles in one place. Adding a collapsible list-like link to each freshPink-specific markdown file would make it easier to jump from article to article, and organize the series.</p>
+<br>
+<h3 id="3-1-setting">3-1. setting</h3>
+<h4 id="3-1-1-create-a-series-data-file">3-1-1. Create a Series Data File</h4>
+<p>First, you need to create a data file that contains the information about the documents in each series. Create a YAML file under Hugo’s <code>data*/</code> folder to manage the series information.</p>
+<p>Example: <code>data/series/freshPink.yaml</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">title</span>: <span style="color:#e6db74">&#34;freshPink&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">items</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">name</span>: <span style="color:#e6db74">&#34;01. freshPink&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">link</span>: <span style="color:#e6db74">&#34;shpink/posts/post-1&#34;</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">name</span>: <span style="color:#e6db74">&#34;02. colorSet&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">link</span>: <span style="color:#e6db74">&#34;https://elecbrandy.github.io/freshpink/posts/post-2&#34;</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">name</span>: <span style="color:#e6db74">&#34;03. features&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">link</span>: <span style="color:#e6db74">&#34;https://elecbrandy.github.io/freshpink/posts/post-3&#34;</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">name</span>: <span style="color:#e6db74">&#34;04. shortcuts&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">link</span>: <span style="color:#e6db74">&#34;https://elecbrandy.github.io/freshpink/posts/post-4&#34;</span>
+</span></span></code></pre></div><p>In this file, the <code>items</code> list includes the name and link of each document that belongs to the series.</p>
+<br>
+<h4 id="3-1-2-create-the-shortcode-file">3-1-2. Create the Shortcode File</h4>
+<p>To display the series in a markdown file, you can use the shortcode like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>{{&lt; <span style="color:#f92672">series</span> <span style="color:#a6e22e">title</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;📚 /freshPink tutorial&#34;</span> <span style="color:#a6e22e">series</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;freshPink&#34;</span> &gt;}}
+</span></span></code></pre></div><ul>
+<li><code>title</code>: This will be the title that users can click to expand the list.</li>
+<li><code>series</code>: Refers to the YAML file name inside the <code>data/series/</code> directory (without the file extension).</li>
+</ul>
+<br>
+<h3 id="3-2-example">3-2. example</h3>
+<p>When you include that code in your markdown file, the following collapsible list will be generated:</p>
+<div class="series">
+  <details>
+    <summary>📚 /freshPink tutorial</summary>
+    <ul>
+      
+      
+      
+    </ul>
+  </details>
+</div>
+
+<br>
+<br>
+
+    
+
+<script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 40,
+  backgroundColor: 'rgb(255, 83, 176)',
+  textColor: '#fff'
+})</script>
+
+</body>
+</html>
