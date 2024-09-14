@@ -2,7 +2,7 @@
 	box-sizing: border-box;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
 	@import url("min700.css");
 }
 
@@ -17,6 +17,10 @@
 
 	--head-font-family: "Fira Code", monospace;
 	--content-font-family: "Noto Sans KR", sans-serif;
+	--background-color: var(--white-color);
+	--text-color: var(--black-color);
+	--gray-color: var(--lgray-color);
+	--code-color: var(--mgray-color);
 }
 
 body[data-theme="light"] {
@@ -39,21 +43,22 @@ html {
 }
 
 .container {
-	max-width: 540px;
+	min-width: 600px;
 	margin: 0 auto;
 	padding: 0 20px;
   }
 
 body {
-	max-width: 540px;
-	padding: 20px;
-	font-size: 11pt;
+	width: 600px;
+	/* padding: 20px; */
+	font-size: 0.9rem;
 	font-weight: 400;
 	color: var(--text-color);
 	font-family: var(--content-font-family);
 	letter-spacing: -0.4px;
 	line-height: 1.8;
 	background-color: var(--background-color);
+	padding: 20px 0px;
 	margin: 0 auto;
 	word-break: keep-all;
 	overflow-wrap: break-word;
@@ -75,7 +80,8 @@ a:hover {
 
 div.post-title {
 	font-family: var(--head-font-family);
-	margin-bottom: 8px;
+	font-size: 0.8rem;
+	margin-bottom: 4px;
 }
 
 div.post-title small {
@@ -84,19 +90,26 @@ div.post-title small {
 
 /* >>>>> ================ HEADER_CSS =============== <<<<< */
 .main-header {
-	min-width: 540px;
-	margin: 0 auto;
+	top: 0;
+  	left: 50%;
+	transform: translateX(-50%); /* 중앙 정렬 */
+	min-width: 600px;
+	margin: 0px auto;
+	padding: 8px 0px;
 	font-size: 0.8rem;
 	font-weight: 400;
 	font-family: var(--head-font-family);
+	position: fixed;
 	background-color: var(--background-color);
 	border-bottom: 1px solid var(--mgray-color);
+	z-index: 1000;
   }
   
   .main-header nav {
-	display: flex;
-	list-style: none;
-	justify-content: flex-start;
+	  display: flex;
+	  /* color: var(--text-color); */
+	  list-style: none;
+	  justify-content: flex-start;
   }
 
   .main-header nav li {
@@ -107,8 +120,8 @@ div.post-title small {
 h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0;
 	font-family: var(--head-font-family);
-    font-weight: 600;
-	letter-spacing: -0.8px;
+	letter-spacing: -1.4px;
+    font-weight: 700;
 }
 
 h1 {
@@ -127,7 +140,7 @@ h3 {
 }
 
 h4 {
-    font-size: 1.0rem;
+    font-size: 0.9rem;
     line-height: 1.2;
 }
 
@@ -160,11 +173,8 @@ h4::after {
 	color: var(--dgray-color);
 }
 
-
-
-
-
-div.content blockquote {
+blockquote {
+	width: 100%;
 	font-weight: 500;
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	font-size: 12pt;
@@ -177,7 +187,7 @@ div.content blockquote {
 	background-color: var(--gray-color);
 }
 
-div.content blockquote p {
+blockquote p {
 	margin: 0;
 }
 
@@ -215,21 +225,10 @@ pre code::before {
 }
 
 hr {
+	width: 100%;
 	margin-top: 2px;
-	margin-top: 6px;
+	margin-bottom: 4px;
 	color: var(--lgray-color);
-}
-
-/* >>>>> ================ LIGHT/DARKMODE_CSS =============== <<<<< */
-#theme-toggle {
-	background: none;
-	border: none;
-	cursor: pointer;
-}
-
-#theme-toggle img {
-	width: 16px;
-	height: auto;
 }
 
 /* >>>>> ================ FOOTER_CSS =============== <<<<< */
@@ -276,12 +275,101 @@ div.freshquote {
 }
 
 div.commit {
+	margin-top: 16px;
     width: 100%;
 }
 
 div.commit img {
     display: block;
     margin: 16px auto;
-    max-width: 540px;
+    max-width: 600px;
     height: auto;
 }
+
+div.series {
+	padding: 4px 10px;
+	border-radius: 4px;
+	font-family: var(--head-font-family);
+	background-color: var(--gray-color);
+}
+
+img {
+	width: 600px;
+}
+
+
+
+  .featured-container {
+	position: relative;
+  }
+  
+  .featured-image img {
+	width: 100%;
+	height: 180px; /* 세로 크기 고정 */
+	object-fit: cover; /* 이미지 잘림 */
+  }
+  
+  .featured-image::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to top, rgba(0, 0, 0, 1.0), rgba(0, 0, 0, 0));
+	z-index: 5; /* 그라데이션이 이미지 위로 오도록 설정 */
+  }
+  
+  .overlay-text {
+	position: absolute;
+	font-family: var(--head-font-family);
+	bottom: 10px; /* 이미지 하단에 텍스트 배치 */
+	left: 20px;
+	color: white;
+	z-index: 10; /* 텍스트가 그라데이션 위로 오도록 설정 */
+  }
+
+  .singleTitle {
+	font-weight: 600;
+	letter-spacing: -1.4px;
+  }
+
+  .toc {
+	position: fixed;
+	font-family: var(--head-font-family);
+	font-size: 0.7rem;
+	justify-content: flex-end;
+	top: 30px;
+	right: 20px;
+	width: 250px;
+	text-align: right;
+	max-height: 80vh;
+	overflow-y: auto;
+	padding: 10px;
+	z-index: 1001;
+	opacity: 30%;
+  }
+  
+  .toc:hover {
+	opacity: 100%;
+  }
+
+  .toc ul {
+	list-style-type: none;
+	padding-left: 0;
+  }
+  
+  .toc ul ul {
+	margin-left: 15px;
+  }
+  
+  .toc a {
+	color: var(--text-color);
+	text-decoration: none;
+  }
+  
+  .toc a:hover {
+	color: var(--primary-color);
+  }
+  
+  

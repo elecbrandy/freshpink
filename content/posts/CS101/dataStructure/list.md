@@ -5,26 +5,18 @@ featured_image = "https://programmercave.com/assets/images/Memes-Linkedlist/llme
 tags = ['dataStructure', 'CS101']
 +++
 
-<details>
-<summary><strong>📂 : 자료구조 모아보기</strong></summary>
-<div markdown="1">
+{{<series title="📂 : 자료구조 모아보기">}}
 
-- <a href="https://elecbrandy.github.io/tags/dataStructure/list"> **[0]** List </a>  
+- [**[0]** List](https://elecbrandy.github.io/tags/dataStructure/list)
+- [**[1]** Stack](https://elecbrandy.github.io/tags/dataStructure/stack)  
+- [**[2]** Queue](https://elecbrandy.github.io/tags/dataStructure/queue)  
+- [**[3]** Heap](https://elecbrandy.github.io/tags/dataStructure/heap)  
+- [**[4]** Tree](https://elecbrandy.github.io/tags/dataStructure/tree)  
+- [**[5]** Graph](https://elecbrandy.github.io/tags/dataStructure/graph)  
+- [**[6]** HashTable](https://elecbrandy.github.io/tags/dataStructure/hashtable)  
 
-- <a href="https://elecbrandy.github.io/tags/dataStructure/stack"> **[1]** Stack </a>  
+{{</series>}}
 
-- <a href="https://elecbrandy.github.io/tags/dataStructure/queue"> **[2]** Queue </a>  
-
-- <a href="https://elecbrandy.github.io/tags/dataStructure/heap"> **[3]** Heap </a>  
-
-- <a href="https://elecbrandy.github.io/tags/dataStructure/tree"> **[4]** Tree </a>  
-
-- <a href="https://elecbrandy.github.io/tags/dataStructure/graph"> **[5]** Graph </a>  
-
-- <a href="https://elecbrandy.github.io/tags/dataStructure/hashtable"> **[6]** HashTable </a>  
-
-</div>
-</details>
 
 <br>
 
