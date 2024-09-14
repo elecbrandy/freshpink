@@ -8,23 +8,28 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+
     steps:
     - name: Checkout
       uses: actions/checkout@v2
       with:
         submodules: true
+        submodules.recursive: true  # 서브모듈도 가져옴
 
-    - name: Setup Hugo
-      uses: peaceiris/actions-hugo@v2
-      with:
-        hugo-version: 'latest'
-        extended: true
+    - name: List directories
+      run: ls -alh  # 디렉토리 구조 확인
 
-    - name: Build
-      run: hugo --source exampleSite --destination public
+    - name: Build Hugo site in submodule
+      run: |
+        cd fpexample  # 서브모듈 디렉토리로 이동
+        hugo --destination public  # Hugo 빌드 수행, 결과는 fpexample/public에 생성
+
+    - name: Move generated public folder to root
+      run: mv fpexample/public ./public  # 생성된 public 폴더를 상위로 이동
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
-        publish_dir: ./exampleSite/public
+        publish_dir: ./public  # 상위 디렉토리의 public을 배포
+        force_orphan: true  # gh-pages 브랜치를 초기화하여 덮어쓰기
