@@ -16,7 +16,7 @@ jobs:
         submodules.recursive: true
 
     - name: List directories
-      run: ls -alh  # 현재 디렉토리 구조 확인
+      run: ls -alh  # 디렉토리 구조 확인
 
     - name: Setup Hugo
       uses: peaceiris/actions-hugo@v2
@@ -25,10 +25,10 @@ jobs:
         extended: true
 
     - name: Build
-      run: hugo --source fpexample --destination public  # fpexample을 소스로 사용하여 빌드
+      run: hugo --source fpexample --destination fpexample/public  # fpexample 하위에 public 생성
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
-        github_token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
-        publish_dir: ./public
+        github_token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}  # 개인 토큰 그대로 유지
+        publish_dir: fpexample/public  # fpexample 하위의 public 디렉토리를 배포
