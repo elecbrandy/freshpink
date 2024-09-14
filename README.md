@@ -64,6 +64,9 @@ hugo server
 
 The freshPink theme is designed to be easily customizable. You can modify the styles, layouts, and content as needed to fit your site. Follow the tutorial on the demo site and try customizing it yourself!
 
+> **warning!**
+> If you continue to see `.md` files that you didn't create, such as post-1.md, it's most likely from exampleSite, whose folder is `/theme/freshpink/exampleSite`. Feel free to delete it, but for the sake of a smooth blogging experience, get rid of the examples! :)
+
 ## Need Help?
 
 If you encounter any issues or have questions, feel free to open an issue on the [GitHub repository](https://github.com/ElecBrandy/freshpink/issues).
