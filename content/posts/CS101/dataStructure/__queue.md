@@ -2,7 +2,7 @@
 title = '[자료구조] Queue'
 date = 2024-09-05
 featured_image = "https://programmercave.com/assets/images/Memes-Linkedlist/llmeme1.jpg"
-tags = ['C++', 'dataStructure', 'CS101']
+tags = ['C++', 'dataStructure', 'cs101']
 +++
 
 **📂 : 자료구조**

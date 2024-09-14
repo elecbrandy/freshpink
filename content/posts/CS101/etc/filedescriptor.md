@@ -2,7 +2,7 @@
 title = 'File Descriptor'
 date = 2023-12-24
 featured_image = "http://db.kookje.co.kr/news2000/photo/2017/0117/L20170117.99002154311i1.jpg"
-tags = ['C', 'CS101']
+tags = ['C', 'cs101']
 +++
 
 > 운영 체제에서 파일이나 입출력 자원을 식별하기 위해 사용하는...
@@ -61,5 +61,5 @@ ____
 
 <br>
 {{<alert>}}
-<a href="https://elecbrandy.github.io/tags/cs101/"> CS101 </a>
+<a href="https://elecbrandy.github.io/tags/cs101/"> cs101 </a>
 {{</alert>}}

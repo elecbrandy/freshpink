@@ -2,25 +2,12 @@
 title = '[자료구조] List'
 date = 2024-09-10
 featured_image = "https://programmercave.com/assets/images/Memes-Linkedlist/llmeme1.jpg"
-tags = ['dataStructure', 'CS101']
+tags = ['dataStructure', 'cs101']
 +++
-
-{{<series title="📂 : 자료구조 모아보기">}}
-
-- [**[0]** List](https://elecbrandy.github.io/tags/dataStructure/list)
-- [**[1]** Stack](https://elecbrandy.github.io/tags/dataStructure/stack)  
-- [**[2]** Queue](https://elecbrandy.github.io/tags/dataStructure/queue)  
-- [**[3]** Heap](https://elecbrandy.github.io/tags/dataStructure/heap)  
-- [**[4]** Tree](https://elecbrandy.github.io/tags/dataStructure/tree)  
-- [**[5]** Graph](https://elecbrandy.github.io/tags/dataStructure/graph)  
-- [**[6]** HashTable](https://elecbrandy.github.io/tags/dataStructure/hashtable)  
-
-{{</series>}}
-
 
 <br>
 
-> list, node, next...
+{{<series title="/dataStructure" series="dataStructure">}}
 
 <br>
 

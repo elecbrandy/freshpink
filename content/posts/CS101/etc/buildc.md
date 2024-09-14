@@ -2,7 +2,7 @@
 title = 'Build C'
 date = 2023-11-03
 featured_image = "http://t1.daumcdn.net/cfile/180D9C41504A57C90D"
-tags = ['C', 'CS101']
+tags = ['C', 'cs101']
 +++
 
 > 컴파일 언어(compiled language)는 소스 코드가 실행되기 전에 컴파일러를 통해 기계어로 변환된 후 실행되는 프로그래밍 언어이다. C 언어는 이러한 컴파일 언어의 대표적인 예시이다.
@@ -67,5 +67,5 @@ ____
 <br>
 
 {{<alert>}}
-<a href="https://elecbrandy.github.io/tags/cs101/"> CS101 </a>
+<a href="https://elecbrandy.github.io/tags/cs101/"> cs101 </a>
 {{</alert>}}

@@ -2,7 +2,7 @@
 title = '[OOP] 캡슐화'
 date = 2024-09-02
 featured_image = "https://miro.medium.com/v2/resize:fit:910/format:webp/1*SDetxWyCUpDq6ju7xhdNYA.jpeg"
-tags = ['C++', 'CS101', 'opp']
+tags = ['C++', 'cs101', 'opp']
 +++
 
 <details>

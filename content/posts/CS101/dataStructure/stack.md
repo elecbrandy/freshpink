@@ -2,7 +2,7 @@
 title = '[자료구조] Stack'
 date = 2024-09-11
 featured_image = "https://image.fnnews.com/resource/media/image/2012/11/04/201211041607219413_l.jpg"
-tags = ['dataStructure', 'CS101']
+tags = ['dataStructure', 'cs101']
 +++
 
 **📂 : 자료구조**

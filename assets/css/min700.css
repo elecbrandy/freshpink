@@ -1,16 +1,38 @@
-@media (max-width: 500px) {
-	.content {
-		min-width: 360px;
-		margin: auto;
-		padding: 20px;
-		box-sizing: border-box;
+@media (max-width: 600px) {
+	.container, body {
+	  width: auto;
+	  padding-left: 20px;
+	  padding-right: 20px;
+	}
+  
+	.main-header {
+	  width: 100%; /* 헤더가 가로를 꽉 채움 */
+	  padding: 0px 20px;
+	  margin: 0 auto;
 	}
 
-	.header-container {
-		padding: 0px 20px;
-	  }
-
-	.pre-title {
-		top: 200px;
+	.main-header nav li {
+	  margin-right: 10px; /* 링크 간격을 조금 줄임 */
+	  font-size: 1.1rem;
 	}
-}
+  
+	img {
+	  width: 100%; /* 이미지가 부모 요소의 너비에 맞게 줄어들도록 설정 */
+	  height: auto; /* 이미지 비율 유지 */
+	}
+	.toc {
+	  display: none; /* 작은 화면에서는 TOC 숨김 */
+	}
+  }
+  
+  @media (max-width: 375px) {
+	.container, body {
+	  padding-left: 20px;
+	  padding-right: 20px;
+	}
+  
+	.toc {
+	  display: none;
+	}
+  }
+  

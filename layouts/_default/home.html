@@ -1,7 +1,7 @@
 {{ define "main" }}
-
-{{ .Content }}
-
+<div style="padding-top: 16px;">
+  {{ .Content }}
+</div>
 <div class="posts-list">
   {{ range first 10 .Site.RegularPages }}
     <div class="post-title">

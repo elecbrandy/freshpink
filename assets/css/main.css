@@ -1,56 +1,57 @@
 *, *:before, *:after {
 	box-sizing: border-box;
-}
-
-@media (max-width: 600px) {
+  }
+  
+  @media (max-width: 600px) {
 	@import url("min700.css");
-}
-
-/* >>>>> ================ COLOR_VAR =============== <<<<< */
-:root {
+  }
+  
+  /* >>>>> ================ COLOR_VAR =============== <<<<< */
+  :root {
 	--primary-color: #e600ff;
 	--white-color: #FFFFFF;
 	--black-color: #181818;
 	--dgray-color: #464646;
 	--mgray-color: #828282;
 	--lgray-color: #f2f2f2;
-
+  
 	--head-font-family: "Fira Code", monospace;
+	--quote-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	--content-font-family: "Noto Sans KR", sans-serif;
+  
 	--background-color: var(--white-color);
 	--text-color: var(--black-color);
 	--gray-color: var(--lgray-color);
 	--code-color: var(--mgray-color);
-}
-
-body[data-theme="light"] {
+  }
+  
+  body[data-theme="light"] {
 	--background-color: var(--white-color);
 	--text-color: var(--black-color);
 	--gray-color: var(--lgray-color);
 	--code-color: var(--mgray-color);
-}
-
-body[data-theme="dark"] {
+  }
+  
+  body[data-theme="dark"] {
 	--background-color: var(--black-color);
 	--text-color: var(--white-color);
 	--gray-color: var(--dgray-color);
 	--code-color: var(--mgray-color);
-}
-
-/* >>>>> ================ MAIN_CSS =============== <<<<< */
-html {
+  }
+  
+  /* >>>>> ================ MAIN_CSS =============== <<<<< */
+  html {
 	scroll-behavior: smooth;
-}
-
-.container {
+  }
+  
+  .container {
 	min-width: 600px;
 	margin: 0 auto;
 	padding: 0 20px;
   }
-
-body {
+  
+  body {
 	width: 600px;
-	/* padding: 20px; */
 	font-size: 0.9rem;
 	font-weight: 400;
 	color: var(--text-color);
@@ -58,125 +59,104 @@ body {
 	letter-spacing: -0.4px;
 	line-height: 1.8;
 	background-color: var(--background-color);
-	padding: 20px 0px;
+	padding: 20px 0;
 	margin: 0 auto;
 	word-break: keep-all;
 	overflow-wrap: break-word;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-}
-
-a {
+  }
+  
+  a {
 	color: var(--text-color);
 	text-decoration: none;
-}
-
-a:hover {
+  }
+  
+  a:hover {
 	color: var(--primary-color);
-	text-decoration: none;
-}
-
-
-div.post-title {
+  }
+  
+  /* >>>>> ================ POST_TITLE_CSS =============== <<<<< */
+  div.post-title {
 	font-family: var(--head-font-family);
 	font-size: 0.8rem;
 	margin-bottom: 4px;
-}
-
-div.post-title small {
+  }
+  
+  div.post-title small {
 	color: var(--mgray-color);
-}
-
-/* >>>>> ================ HEADER_CSS =============== <<<<< */
-.main-header {
+  }
+  
+  /* >>>>> ================ HEADER_CSS =============== <<<<< */
+  .main-header {
 	top: 0;
-  	left: 50%;
-	transform: translateX(-50%); /* 중앙 정렬 */
-	min-width: 600px;
-	margin: 0px auto;
-	padding: 8px 0px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 600px;
+	margin: 0 auto;
+	padding: 8px 0;
 	font-size: 0.8rem;
 	font-weight: 400;
 	font-family: var(--head-font-family);
 	position: fixed;
 	background-color: var(--background-color);
-	border-bottom: 1px solid var(--mgray-color);
 	z-index: 1000;
   }
   
   .main-header nav {
-	  display: flex;
-	  /* color: var(--text-color); */
-	  list-style: none;
-	  justify-content: flex-start;
+	display: flex;
+	list-style: none;
+	justify-content: flex-start;
   }
-
+  
   .main-header nav li {
 	margin-right: 14px;
   }
-
-/* >>>>> ================ MARKDOWN_CSS =============== <<<<< */
-h1, h2, h3, h4, h5, h6 {
-    margin-bottom: 0;
+  
+  /* >>>>> ================ MARKDOWN_CSS =============== <<<<< */
+  h1, h2, h3, h4, h5, h6 {
+	margin-bottom: 0;
 	font-family: var(--head-font-family);
 	letter-spacing: -1.4px;
-    font-weight: 700;
-}
-
-h1 {
-    font-size: 1.6rem;
-    line-height: 2.0;
-}
-
-h2 {
-    font-size: 1.4rem;
-    line-height: 1.6;
-}
-
-h3 {
-    font-size: 1.2rem;
-    line-height: 1.4;
-}
-
-h4 {
-    font-size: 0.9rem;
-    line-height: 1.2;
-}
-
-
-h1::after {
-	content: "	h1";
+	font-weight: 700;
+  }
+  
+  h1 {
+	font-size: 1.6rem;
+	line-height: 2.0;
+  }
+  
+  h2 {
+	font-size: 1.4rem;
+	line-height: 1.6;
+  }
+  
+  h3 {
+	font-size: 1.2rem;
+	line-height: 1.4;
+  }
+  
+  h4 {
+	font-size: 0.9rem;
+	line-height: 1.2;
+  }
+  
+  h1::after, h2::after, h3::after, h4::after {
 	font-size: 0.6em;
 	font-weight: 300;
 	color: var(--dgray-color);
-}
-
-h2::after {
-	content: "	h2";
-	font-size: 0.6em;
-	font-weight: 300;
-	color: var(--dgray-color);
-}
-
-h3::after {
-	content: "	h3";
-	font-size: 0.6em;
-	font-weight: 300;
-	color: var(--dgray-color);
-}
-
-h4::after {
-	content: "	h4";
-	font-size: 0.6em;
-	font-weight: 300;
-	color: var(--dgray-color);
-}
-
-blockquote {
+  }
+  
+  h1::after { content: " h1"; }
+  h2::after { content: " h2"; }
+  h3::after { content: " h3"; }
+  h4::after { content: " h4"; }
+  
+  blockquote {
 	width: 100%;
 	font-weight: 500;
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-family: var(--quote-font-family);
 	font-size: 12pt;
 	font-style: italic;
 	letter-spacing: 0.5px;
@@ -185,23 +165,23 @@ blockquote {
 	padding: 4px 24px;
 	border-left: 5px solid var(--primary-color);
 	background-color: var(--gray-color);
-}
-
-blockquote p {
+  }
+  
+  blockquote p {
 	margin: 0;
-}
-
-p code {
-	padding: 2px 4px 2px 4px;
+  }
+  
+  p code {
+	padding: 2px 4px;
 	margin: 4px;
 	border-radius: 4px;
-	color: var(--black-color);
-	background-color: var(--code-color);
+	color: var(--text-color);
+	background-color: var(--gray-color);
 	white-space: pre-wrap;
 	word-wrap: break-word;
-}
-
-pre {
+  }
+  
+  pre {
 	padding: 10px;
 	border-radius: 4px;
 	tab-size: 4;
@@ -209,104 +189,109 @@ pre {
 	overflow-x: auto;
 	white-space: pre-wrap;
 	word-wrap: break-word;
-}
-
-pre code::before {
+  }
+  
+  pre code::before {
 	content: attr(class);
 	display: block;
 	text-transform: uppercase;
 	color: var(--white-color);
-	padding: 0px 6px;
+	padding: 0 6px;
 	text-align: right;
-}
-
-pre code::before {
-	content: "" attr(data-lang);
-}
-
-hr {
+  }
+  
+  hr {
+	height: 1px;
 	width: 100%;
 	margin-top: 2px;
-	margin-bottom: 4px;
-	color: var(--lgray-color);
-}
-
-/* >>>>> ================ FOOTER_CSS =============== <<<<< */
-footer {
+	margin-bottom: 2px;
+	opacity: 40%;
+	color: var(--mgray-color);
+  }
+  
+  /* >>>>> ================ FOOTER_CSS =============== <<<<< */
+  footer {
 	font-family: var(--head-font-family);
 	font-size: 10pt;
 	color: var(--text-color);
 	margin-top: 20px;
 	margin-bottom: 60px;
-}
-
-/* >>>>> ================ SHORTCUT_CSS =============== <<<<< */
-div.alert {
+  }
+  
+  /* >>>>> ================ SHORTCUT_CSS =============== <<<<< */
+  div.alert {
 	width: auto;
 	height: 40px;
-	margin: 8px 0px;
+	margin: 8px 0;
 	text-align: center;
-	padding: 4px 0px 0px 0px;
+	padding: 4px 0;
 	border-radius: 4px;
 	background-color: var(--primary-color);
-}
-
-div.alert a {
+  }
+  
+  div.alert a {
 	color: var(--white-color);
-	font-weight:400;
-	text-decoration: none;
-}
-
-div.alert a:hover {
+	font-weight: 400;
+  }
+  
+  div.alert a:hover {
 	color: var(--dgray-color);
-	font-weight:400;
-	text-decoration: none;
-}
-
-div.freshquote {
+  }
+  
+  div.freshquote {
 	width: 100%;
-	margin: 6px 0px;
+	margin: 6px 0;
 	font-size: 14pt;
 	font-style: italic;
 	text-align: center;
 	padding: 16px;
 	border-left: 5px solid var(--primary-color);
 	background-color: var(--gray-color);
-}
-
-div.commit {
+  }
+  
+  div.commit {
 	margin-top: 16px;
-    width: 100%;
-}
-
-div.commit img {
-    display: block;
-    margin: 16px auto;
-    max-width: 600px;
-    height: auto;
-}
-
-div.series {
+	width: 100%;
+  }
+  
+  div.commit img {
+	display: block;
+	margin: 16px auto;
+	max-width: 600px;
+	height: auto;
+  }
+  
+  div.series {
+	margin-top: 10px;
 	padding: 4px 10px;
 	border-radius: 4px;
 	font-family: var(--head-font-family);
+	font-size: 0.8rem;
 	background-color: var(--gray-color);
-}
-
-img {
+  }
+  
+  div.series ul li {
+	list-style: none;
+  }
+  
+  div.series a {
+	padding-left: 14px;
+	padding-top: 4px;
+  }
+  
+  /* >>>>> ================ IMAGE_CSS =============== <<<<< */
+  img {
 	width: 600px;
-}
-
-
-
+  }
+  
   .featured-container {
 	position: relative;
   }
   
   .featured-image img {
 	width: 100%;
-	height: 180px; /* 세로 크기 고정 */
-	object-fit: cover; /* 이미지 잘림 */
+	height: 180px;
+	object-fit: cover;
   }
   
   .featured-image::before {
@@ -317,28 +302,23 @@ img {
 	width: 100%;
 	height: 100%;
 	background: linear-gradient(to top, rgba(0, 0, 0, 1.0), rgba(0, 0, 0, 0));
-	z-index: 5; /* 그라데이션이 이미지 위로 오도록 설정 */
+	z-index: 5;
   }
   
   .overlay-text {
 	position: absolute;
 	font-family: var(--head-font-family);
-	bottom: 10px; /* 이미지 하단에 텍스트 배치 */
+	bottom: 10px;
 	left: 20px;
 	color: white;
-	z-index: 10; /* 텍스트가 그라데이션 위로 오도록 설정 */
+	z-index: 10;
   }
-
-  .singleTitle {
-	font-weight: 600;
-	letter-spacing: -1.4px;
-  }
-
+  
+  /* >>>>> ================ TOC_CSS =============== <<<<< */
   .toc {
 	position: fixed;
 	font-family: var(--head-font-family);
 	font-size: 0.7rem;
-	justify-content: flex-end;
 	top: 30px;
 	right: 20px;
 	width: 250px;
@@ -353,7 +333,7 @@ img {
   .toc:hover {
 	opacity: 100%;
   }
-
+  
   .toc ul {
 	list-style-type: none;
 	padding-left: 0;
@@ -365,11 +345,24 @@ img {
   
   .toc a {
 	color: var(--text-color);
-	text-decoration: none;
   }
   
   .toc a:hover {
 	color: var(--primary-color);
   }
   
+  /* >>>>> ================ MISC_CSS =============== <<<<< */
+  div.list {
+	margin-top: 16px;
+  }
+  
+  div.page-links {
+	font-family: var(--head-font-family);
+  }
+  
+  div.page-links a {
+	display: block;
+	letter-spacing: -1px;
+	margin-right: 8px;
+  }
   
