@@ -13,6 +13,10 @@ jobs:
       uses: actions/checkout@v2
       with:
         submodules: true
+        submodules.recursive: true  # 서브모듈을 재귀적으로 모두 가져오기
+
+    - name: Update submodules
+      run: git submodule update --init --recursive  # 서브모듈 업데이트
 
     - name: Setup Hugo
       uses: peaceiris/actions-hugo@v2
@@ -21,7 +25,7 @@ jobs:
         extended: true
 
     - name: Build
-      run: hugo --source exampleSite --destination public
+      run: hugo --source exampleSite --destination public  # exampleSite를 참조하여 빌드
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
