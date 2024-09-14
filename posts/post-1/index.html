@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="/css/reset.css">
+<title>01. freshPink | freshPink</title>
+
+      <link rel="stylesheet" href="/css/main.min.830529474f3e538d158886bdcfa1ba6071455ff9912f37b04b8145c6b716cd97.css" integrity="sha256-gwUpR08&#43;U40ViIa9z6G6YHFFX/mRLzewS4FFxrcWzZc=" crossorigin="anonymous">
+      <link rel="stylesheet" href="/css/min700.min.c55885430d625813d1a6770ef6712b8534781fdd318699edd1bb9c6f62907507.css" integrity="sha256-xViFQw1iWBPRpncO9nErhTR4H90xhpnt0bucb2KQdQc=" crossorigin="anonymous">
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+	<nav>
+	  <li><a href="/">/freshPink</a></li>
+	  <li><a href="/tags">/tags</a></li>
+	  <li><a href="/about">/about</a></li>
+	  <li id="theme-toggle" style="cursor: pointer;">/todark</li>
+	</nav>
+  </header>
+  
+  <script>
+	document.addEventListener('DOMContentLoaded', function() {
+	  const themeToggle = document.getElementById('theme-toggle');
+	  
+	  
+	  let currentTheme = localStorage.getItem('theme') || 'light';
+  
+	  
+	  document.body.setAttribute('data-theme', currentTheme);
+	  themeToggle.textContent = currentTheme === 'dark' ? '/tolight' : '/todark';
+  
+	  
+	  function toggleTheme() {
+		
+		const newTheme = document.body.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+  
+		
+		document.body.setAttribute('data-theme', newTheme);
+  
+		
+		localStorage.setItem('theme', newTheme);
+  
+		
+		themeToggle.textContent = newTheme === 'dark' ? '/tolight' : '/todark';
+	  }
+  
+	  
+	  themeToggle.addEventListener('click', toggleTheme);
+	});
+  </script>
+  
+    
+  <aside class="toc">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-getting-started">1. Getting Started</a>
+      <ul>
+        <li><a href="#1-1-demo-site">1-1. Demo Site</a></li>
+        <li><a href="#1-2-installation">1-2. Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#2-customizing-the-theme">2. Customizing the Theme</a></li>
+    <li><a href="#3-need-help">3. Need Help?</a></li>
+  </ul>
+</nav>
+  </aside>
+  <div class="featured-container">
+    
+      <div class="featured-image">
+        <img src="https://raw.githubusercontent.com/ElecBrandy/freshpink/gh-pages/basic.png" alt="Featured Image for 01. freshPink">
+      </div>
+    
+    <div class="overlay-text">
+      <small>2024.01.01</small>
+      <div class="singleTitle">01. freshPink</div>
+    </div>
+  </div>
+  <br>
+<p>After enjoying several Hugo themes, I tried to develop a theme that suited my needs, refined it, and evolved it into this theme.</p>
+<p>While it&rsquo;s simple and static page-based, the theme makes it easy to categorize your articles with tags and helps you manage your blog with multiple shortcut.</p>
+<br>
+<br>
+<h2 id="1-getting-started">1. Getting Started</h2>
+<hr>
+<p>To begin using freshPink for your development blog, follow the installation and customization instructions available on our <a href="https://github.com/your-repo/freshpink-hugo-theme"><strong>GitHub repository</strong></a>. Dive into the world of blogging with a theme that&rsquo;s as dynamic and vibrant as your ideas.</p>
+<br>
+<h3 id="1-1-demo-site">1-1. Demo Site</h3>
+<p>Here is the demo site where you can find a simple example and a detailed tutorial.</p>
+<blockquote>
+<p><a href="https://elecbrandy.github.io/freshpink/">Go to Demo site</a>.</p>
+</blockquote>
+<br>
+<h3 id="1-2-installation">1-2. Installation</h3>
+<p>There are two methods to install the freshPink theme. You can either use Git submodules (recommended for easy updates) or download it directly. Unless there&rsquo;s a specific reason, we recommend using the submodule method.</p>
+<h4 id="1-2-1-method-1-install-via-git-submodule-recommended">1-2-1. Method 1: Install via Git Submodule (Recommended)</h4>
+<ol>
+<li><strong>Navigate to Your Hugo Site Directory</strong>:
+Open a terminal and navigate to the root directory of your Hugo site. If you haven’t created a Hugo site yet, you can do so with the following command:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo new site yourSiteName
+</span></span></code></pre></div><ol start="2">
+<li><strong>Add Theme as a Git Submodule</strong>:
+Add the freshPink theme to your site as a Git submodule. Run the following command in the terminal:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git submodule add git@github.com:ElecBrandy/freshpink.git themes/freshpink
+</span></span></code></pre></div><ol start="3">
+<li><strong>Update Site Configuration</strong>:
+Open your site’s <code>config.toml</code> file in a text editor and update the <code>theme</code> variable to <code>&quot;freshpink&quot;</code>:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#a6e22e">theme</span> = <span style="color:#e6db74">&#34;freshpink&#34;</span>
+</span></span></code></pre></div><ol start="4">
+<li><strong>Preview Your Site</strong>:
+To ensure everything works correctly, run the following command to start the local server and preview your site:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo server
+</span></span></code></pre></div><br>
+<h4 id="1-2-2-method-2-download-and-install-manually">1-2-2. Method 2: Download and Install Manually</h4>
+<ol>
+<li>
+<p><strong>Download the Theme</strong>:
+Go to the <a href="https://github.com/ElecBrandy/freshpink">FreshPink GitHub repository</a> and download the theme as a ZIP file.</p>
+</li>
+<li>
+<p><strong>Extract and Move the Theme</strong>:
+Extract the ZIP file and move the extracted folder to the <code>themes</code> directory in your Hugo site.</p>
+</li>
+<li>
+<p><strong>Update Site Configuration</strong>:
+Just like with the Git submodule method, open your <code>config.toml</code> file and set the <code>theme</code> variable to <code>&quot;freshpink&quot;</code>.</p>
+</li>
+<li>
+<p><strong>Preview Your Site</strong>:
+Run the following command to build and preview your site locally:</p>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo server
+</span></span></code></pre></div><br>
+<br>
+<h2 id="2-customizing-the-theme">2. Customizing the Theme</h2>
+<p>The freshPink theme is designed to be easily customizable. You can modify the styles, layouts, and content as needed to fit your site. Follow the tutorial on the demo site and try customizing it yourself!</p>
+<br>
+<br>
+<h2 id="3-need-help">3. Need Help?</h2>
+<p>If you encounter any issues or have questions, feel free to open an issue on the <a href="https://github.com/ElecBrandy/freshpink/issues">GitHub repository</a>.</p>
+<br>
+<br>
+<blockquote>
+<p>Your journey to sharing your development insights and projects in a fresh, engaging way starts with freshPink.</p>
+</blockquote>
+<br>
+<br>
+
+    
+
+<script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 40,
+  backgroundColor: 'rgb(255, 83, 176)',
+  textColor: '#fff'
+})</script>
+
+</body>
+</html>
