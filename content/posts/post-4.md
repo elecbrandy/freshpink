@@ -73,7 +73,7 @@ Sometimes there are articles that are difficult to categorize using tags alone. 
 ### 3-1. setting
 
 #### 3-1-1. Create a Series Data File
-First, you need to create a data file that contains the information about the documents in each series. Create a YAML file under Hugo’s `data*/` folder to manage the series information.
+First, you need to create a data file that contains the information about the documents in each series. Create a YAML file under Hugo’s `data*/` folder to manage the series information..
 
 Example: `data/series/freshPink.yaml`
 
