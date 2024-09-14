@@ -22,7 +22,8 @@
 
 	--head-font-family: "Fira Code", monospace;
 	--quote-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-	--content-font-family: "Noto Sans KR";
+	/* --content-font-family: "Noto Sans KR"; */
+	--content-font-family: "Fira Code", monospace;
   }
   
   body[data-theme="light"] {
@@ -56,7 +57,7 @@
 	font-weight: 300;
 	color: var(--text-color);
 	font-family: var(--content-font-family);
-	letter-spacing: 0.3px;
+	letter-spacing: -0.3px;
 	line-height: 1.8;
 	background-color: var(--background-color);
 	padding: 20px 0;

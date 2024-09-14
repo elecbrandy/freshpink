@@ -113,3 +113,8 @@ When you include that code in your markdown file, the following collapsible list
 
 <br>
 <br>
+
+
+
+git submodule add git@github.com:ElecBrandy/freshpink.git themes/freshpink
+git submodule update --init --recursive
