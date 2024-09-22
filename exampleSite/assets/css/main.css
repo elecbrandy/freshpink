@@ -22,8 +22,8 @@
 
 	--head-font-family: "Fira Code", monospace;
 	--quote-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-	/* --content-font-family: "Noto Sans KR"; */
-	--content-font-family: "Fira Code", monospace;
+	--content-font-family: "Noto Sans KR";
+	/* --content-font-family: "Fira Code", monospace; */
   }
   
   body[data-theme="light"] {
@@ -174,6 +174,7 @@
   
   code {
 	font-family: var(--head-font-family);
+	background-color: var(--gray-color);
 	padding: 2px 4px;
 	margin: 4px;
 	border-radius: 4px;
@@ -204,7 +205,23 @@
   }
   
   p code {
-	background-color: var(--gray-color);	
+	font-family: var(--head-font-family);
+	background-color: var(--gray-color);
+	padding: 2px 4px;
+	margin: 4px;
+	border-radius: 4px;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+  }
+
+  li code {
+	font-family: var(--head-font-family);
+	background-color: var(--gray-color);
+	padding: 2px 4px;
+	margin: 4px;
+	border-radius: 4px;
+	white-space: pre-wrap;
+	word-wrap: break-word;
   }
   
   hr {
