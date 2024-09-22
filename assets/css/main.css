@@ -124,22 +124,22 @@
   }
   
   h1 {
-	font-size: 1.6rem;
+	font-size: 1.8rem;
 	line-height: 2.0;
   }
   
   h2 {
-	font-size: 1.4rem;
+	font-size: 1.6rem;
 	line-height: 1.6;
   }
   
   h3 {
-	font-size: 1.2rem;
+	font-size: 1.4rem;
 	line-height: 1.4;
   }
   
   h4 {
-	font-size: 0.9rem;
+	font-size: 1.2rem;
 	line-height: 1.2;
   }
   
@@ -174,7 +174,6 @@
   
   code {
 	font-family: var(--head-font-family);
-	background-color: var(--gray-color);
 	padding: 2px 4px;
 	margin: 4px;
 	border-radius: 4px;
