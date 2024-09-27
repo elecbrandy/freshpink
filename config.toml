@@ -23,6 +23,7 @@ weight = 30
     min = "0.116.0"
 
 [params]
+  googleAnalytics = "G-000000000" # your GoogleAnalytics code
   githubUsername = "elecbrandy"
   copyright = "Copyright © 2024 elecbrandy"
 
