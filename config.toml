@@ -26,6 +26,7 @@ weight = 30
   googleAnalytics = "G-000000000" # your GoogleAnalytics code
   githubUsername = "elecbrandy"
   copyright = "Copyright © 2024 elecbrandy"
+  math = true
 
 [taxonomies]
   tag = "tags"
@@ -34,3 +35,4 @@ weight = 30
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
