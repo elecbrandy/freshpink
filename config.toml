@@ -1,20 +1,20 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://elecbrandy.github.io/freshpink/'
 languageCode = 'en-us'
 title = 'freshPink'
 
 [[menus.main]]
 name = 'Home'
-pageRef = '/'
+url = '/freshpink/'
 weight = 10
 
 [[menus.main]]
 name = 'TAGS'
-pageRef = '/tags'
+url = '/freshpink/tags/'
 weight = 20
 
 [[menus.main]]
 name = 'ABOUT'
-pageRef = '/about'
+url = '/freshpink/about/'
 weight = 30
 
 [module]
@@ -23,16 +23,12 @@ weight = 30
     min = "0.116.0"
 
 [params]
-  googleAnalytics = "G-000000000" # your GoogleAnalytics code
   githubUsername = "elecbrandy"
   copyright = "Copyright © 2024 elecbrandy"
-  math = true
 
 [taxonomies]
   tag = "tags"
 
 [markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
-
+  [markup.goldmark.renderer]
+    unsafe = true
