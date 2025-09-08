@@ -1,8 +1,8 @@
 <header class="main-header">
 	<nav>
-	  <li><a href="{{ site.BaseURL }}">/home</a></li>
-	  <li><a href="{{ site.BaseURL }}tags/">/tags</a></li>
-	  <li><a href="{{ site.BaseURL }}about/">/about</a></li>
+		{{- range site.Menus.main }}
+	    <li><a href="{{ .URL }}">/{{ .Name }}</a></li>
+		{{- end }}
 	  <li id="theme-toggle" style="cursor: pointer;">/todark</li>
 	</nav>
   </header>
