@@ -12,45 +12,44 @@ Welcome to the **freshPink** theme! A clean and minimalist theme for [Hugo](http
 
 <br>
 
-## 🚀 Updates — 2025.09.07
+## 🛠️ Fix — 2025.11.11
 
-We’ve added new customization options to make your site more flexible and personalized!
+The navigation bar can now be dynamically modified, and the header can be freely configured through the `hugo.toml` file!
 
-### Theme & Display
-- **`primaryColor`**: Set your theme’s primary color (hex code). ex: `"#fa8b84"`.
-- **`math`**: Enable or disable math rendering with KaTeX (`true` / `false`).
+> **step 01. Create the Content Folder**
 
-### 🖼️ Main Image
-- **`mainImageUrl`**: URL of the main image shown on the homepage.  
-- **`showMainImage`**: Toggle the main image on or off (`true` / `false`).
+First, you need to create a folder for your new section's content.
 
-### 📊 GitHub Contribution Graph
-- **`githubUsername`**: Your GitHub username (used to fetch the contribution graph).  
-- **`showGithubChart`**: Show or hide the GitHub contributions chart on the homepage (`true` / `false`).
+1.  Go to your project's `content/` directory.
+2.  Create a new folder named after your section. For example, to create a "Projects" page, make a folder called `content/projects`.
+3.  You can add Markdown files (`.md`) inside this new folder to fill it with content. (Using `_index.md` is common for the main page of a section).
 
-### 🔖 Site Metadata
-- **`googleAnalytics`**: Your Google Analytics tracking ID (e.g., `"G-000000000"`).  
-- **`copyright`**: Footer copyright.
+> **step 02. Add the Menu Item to `hugo.toml`**
 
-### Example `hugo.toml`
-```toml
-[params]
-  # --- Site Metadata ---
-  googleAnalytics = "G-000000000"
-  copyright = "Copyright © 2024 elecbrandy"
+Next, open your `hugo.toml` file and add a new menu entry. This will make the "Projects" link appear in your site's navigation.
 
-  # --- Theme & Display Settings ---
-  primaryColor = "#fa8b84"
-  math = true
+Add the following block to your `hugo.toml` -> `projects` menu (new!)
 
-  # --- GitHub Chart ---
-  githubUsername = "elecbrandy"
-  showGithubChart = true
+``` toml
+[[menus.main]]
+name = 'Home'
+pageRef = '/'
+weight = 10
 
-  # --- Main Image ---
-  mainImageUrl = "https://i.imgur.com/URQWyyY.png"
-  showMainImage = true
+[[menus.main]]
+name = 'TAGS'
+pageRef = '/tags/'
+weight = 20
+
+[[menus.main]]
+  name = 'PROJECTS'
+  pageRef = '/projects/'
+  weight = 50
 ```
+
+- `name`: The text that will show up in the menu.
+- `pageRef`: The URL for the link. This **must** match the folder you created in step 1.
+- `weight`: This controls the order of your menu items. A higher number (like `50`) will appear after items with a lower number (like `10` or `20`).
 
 <br>
 <br>
@@ -62,10 +61,11 @@ Check out the [**Demo Site**](https://elecbrandy.github.io/freshpink/) for an ex
 This guide walks you through applying the freshpink theme to a new Hugo site using **Hugo Modules** — the recommended modern way to manage themes.
 
 <br>
-
 <br>
 
-## 1. Create a New Hugo Site
+## How to use
+
+#### 1. Create a New Hugo Site
 
 ```bash
 hugo new site myblog
@@ -74,7 +74,7 @@ cd myblog
 
 <br>
 
-## 2. Initialize Hugo Modules
+#### 2. Initialize Hugo Modules
 
 ```bash
 hugo mod init github.com/yourname/myblog
@@ -85,7 +85,7 @@ That means the repository address that you will host through GitHub. In my case,
 
 <br>
 
-## 3. Update `hugo.toml`
+#### 3. Update `hugo.toml`
 
 Open the generated `hugo.toml` file and **replace its contents completely** with the configuration below. Then, update it with your own information:
 
@@ -142,7 +142,7 @@ weight = 30
 
 <br>
 
-## 4. Download the Theme
+#### 4. Download the Theme
 
 ```bash
 hugo mod tidy
@@ -150,14 +150,14 @@ hugo mod tidy
 
 <br>
 
-## 5. Create Your First Post
+#### 5. Create Your First Post
 
 ```bash
 hugo new posts/hello.md
 ```
 <br>
 
-## 6. Run the Local Server
+#### 6. Run the Local Server
 
 ```bash
 hugo server -D
@@ -166,3 +166,44 @@ hugo server -D
 Then open (local check) -> [http://localhost:1313](http://localhost:1313)
 
 You should see your blog styled with the **freshpink** theme! 🎉
+
+<br>
+<br>
+
+## Features
+
+#### Theme & Display
+- **`primaryColor`**: Set your theme’s primary color (hex code). ex: `"#fa8b84"`.
+- **`math`**: Enable or disable math rendering with KaTeX (`true` / `false`).
+
+#### 🖼️ Main Image
+- **`mainImageUrl`**: URL of the main image shown on the homepage.  
+- **`showMainImage`**: Toggle the main image on or off (`true` / `false`).
+
+#### 📊 GitHub Contribution Graph
+- **`githubUsername`**: Your GitHub username (used to fetch the contribution graph).  
+- **`showGithubChart`**: Show or hide the GitHub contributions chart on the homepage (`true` / `false`).
+
+#### 🔖 Site Metadata
+- **`googleAnalytics`**: Your Google Analytics tracking ID (e.g., `"G-000000000"`).  
+- **`copyright`**: Footer copyright.
+
+#### Example -> `hugo.toml`
+```toml
+[params]
+  # --- Site Metadata ---
+  googleAnalytics = "G-000000000"
+  copyright = "Copyright © 2024 elecbrandy"
+
+  # --- Theme & Display Settings ---
+  primaryColor = "#fa8b84"
+  math = true
+
+  # --- GitHub Chart ---
+  githubUsername = "elecbrandy"
+  showGithubChart = true
+
+  # --- Main Image ---
+  mainImageUrl = "https://i.imgur.com/URQWyyY.png"
+  showMainImage = true
+```
