@@ -170,7 +170,21 @@ You should see your blog styled with the **freshpink** theme! 🎉
 <br>
 <br>
 
-## Features
+## Update Guide
+
+To update the theme to the latest version, run the following command in the root of your Hugo project.
+
+```bash
+hugo mod tidy
+hugo mod get -u
+```
+
+This command will fetch the latest version of the theme from its repository.
+
+<br>
+<br>
+
+## Features (hugo.toml)
 
 #### Theme & Display
 - **`primaryColor`**: Set your theme’s primary color (hex code). ex: `"#fa8b84"`.
