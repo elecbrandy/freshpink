@@ -16,7 +16,7 @@ Welcome to the **freshPink** theme! A clean and minimalist theme for [Hugo](http
 
 The navigation bar can now be dynamically modified, and the header can be freely configured through the `hugo.toml` file!
 
-> **step 01. Create the Content Folder**
+#### step 01. Create the Content Folder
 
 First, you need to create a folder for your new section's content.
 
@@ -24,7 +24,7 @@ First, you need to create a folder for your new section's content.
 2.  Create a new folder named after your section. For example, to create a "Projects" page, make a folder called `content/projects`.
 3.  You can add Markdown files (`.md`) inside this new folder to fill it with content. (Using `_index.md` is common for the main page of a section).
 
-> **step 02. Add the Menu Item to `hugo.toml`**
+#### step 02. Add the Menu Item to `hugo.toml`
 
 Next, open your `hugo.toml` file and add a new menu entry. This will make the "Projects" link appear in your site's navigation.
 
@@ -93,7 +93,8 @@ Open the generated `hugo.toml` file and **replace its contents completely** with
 * `title`: Choose the name you want for your blog
 * `githubUsername`: Your GitHub username — this is required to display your contribution graph (grass) on the homepage
 * `googleAnalytics`: (Optional) If you want to use Google Analytics, add your tracking ID here
-* Important: **Do not add or define a `theme` field.** We're using Hugo Modules to manage the theme, so this must be left out.
+* 👀 Important: **Do not add or define a `theme` field.** We're using Hugo Modules to manage the theme, so this must be left out.
+* The [module] section below is what tells Hugo to fetch the freshPink theme. Make sure this part is included!
 
 ``` toml
 baseURL = 'https://example.org/' # your git repository address
@@ -121,7 +122,7 @@ weight = 30
     extended = true
     min = "0.116.0"
   [[module.imports]]
-    path = "github.com/elecbrandy/freshpink"
+    path = "github.com/elecbrandy/freshpink"  # important!
 
 [params]
   googleAnalytics   = "G-000000000"   # Your Google Analytics tracking ID
@@ -142,9 +143,10 @@ weight = 30
 
 <br>
 
-#### 4. Download the Theme
+#### 4. Install and Fetch the Theme
+Now, run the following command. Hugo will automatically detect the theme from your hugo.toml and download the necessary files. This command initializes the modules and downloads the theme files to your local cache.
 
-```bash
+``` bash
 hugo mod tidy
 ```
 

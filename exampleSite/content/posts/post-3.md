@@ -53,9 +53,7 @@ To display the series in a markdown file, you can use the shortcode like this!
 ### 1-2. Example
 When you include that code in your markdown file, the following collapsible list will be generated!
 
-``` markdown
 {{< series title="📚 /freshPink tutorial" series="freshPink" >}}
-```
 
 <br>
 <br>
