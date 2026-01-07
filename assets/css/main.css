@@ -121,121 +121,156 @@
   
   
   /* >>>>> ================ MARKDOWN_CSS =============== <<<<< */
-  h1, h2, h3, h4, h5, h6 {
-	margin-bottom: 0;
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 24px;
+	margin-bottom: 16px;
 	font-family: var(--header-font-family);
 	letter-spacing: -1.2px;
 	font-weight: 700;
-  }
-  
-  h1 {
+}
+
+h1 {
 	font-size: 1.8rem;
 	line-height: 2.0;
-  }
-  
-  h2 {
+    padding-bottom: .3em;
+	border-bottom: 1px solid var(--mgray-color);
+}
+
+h2 {
 	font-size: 1.6rem;
 	line-height: 1.6;
-  }
-  
-  h3 {
+    padding-bottom: .3em;
+	border-bottom: 1px solid var(--mgray-color);
+}
+
+h3 {
 	font-size: 1.4rem;
 	line-height: 1.4;
-  }
-  
-  h4 {
+}
+
+h4 {
 	font-size: 1.2rem;
 	line-height: 1.2;
-  }
-  
-  h1::after, h2::after, h3::after, h4::after {
-	font-size: 0.6em;
-	font-weight: 300;
-	color: var(--dgray-color);
-  }
-  
-  h1::after { content: " h1"; }
-  h2::after { content: " h2"; }
-  h3::after { content: " h3"; }
-  h4::after { content: " h4"; }
+}
 
-  blockquote {
+h5 {
+    font-size: 1rem;
+}
+
+h6 {
+    font-size: 0.9rem;
+    color: var(--mgray-color);
+}
+
+blockquote {
 	width: 100%;
-	font-weight: 500;
+	font-weight: 400;
 	font-family: var(--quote-font-family);
-	font-size: 12pt;
-	font-style: italic;
+	font-size: 1rem;
 	letter-spacing: 0.5px;
 	line-height: 1.8;
-	margin: 0;
+	margin: 0 0 16px;
 	padding: 4px 24px;
-	border-left: 5px solid var(--primary-color);
+	border-left: 4px solid var(--mgray-color);
 	background-color: var(--gray-color);
-  }
-  
-  blockquote p {
+}
+
+blockquote p {
 	margin: 0;
-  }
-  
-  code {
+}
+
+code {
 	font-family: var(--title-font-family);
-	padding: 2px 4px;
-	margin: 4px;
-	border-radius: 4px;
-	white-space: pre-wrap;
-	word-wrap: break-word;
-  }
-  
-  pre {
-	font-size: 0.8rem;
-	margin: 8px 0px;
-	padding: 0px 12px;
-	border-radius: 4px;
+	padding: .2em .4em;
+	margin: 0 2px;
+	font-size: 85%;
+	background-color: var(--gray-color);
+	border-radius: 6px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+pre {
+	font-size: 0.9rem;
+	margin: 16px 0px;
+	padding: 16px;
+	border-radius: 6px;
 	tab-size: 4;
 	display: block;
 	overflow-x: auto;
-	white-space: pre-wrap;
-	word-wrap: break-word;
-  }
-  
-  pre code::before {
-	font-size: 0.6rem;
+	white-space: pre;
+	word-wrap: normal;
+	background-color: var(--gray-color);
+}
+
+pre code {
+    padding: 0;
+    margin: 0;
+    font-size: inherit;
+    background-color: transparent;
+    border-radius: 0;
+    white-space: inherit;
+    word-wrap: inherit;
+}
+
+pre code::before {
+	font-size: 0.8rem;
 	content: attr(data-lang);
 	display: block;
-	color: var(--white-color);
-	padding-top: 0px;
+	color: var(--code-color);
 	padding-bottom: 12px;
 	text-align: right;
-  }
-  
-  p code {
-	font-family: var(--title-font-family);
-	background-color: var(--gray-color);
-	padding: 2px 4px;
-	margin: 4px;
-	border-radius: 4px;
-	white-space: pre-wrap;
-	word-wrap: break-word;
-  }
+}
 
-  li code {
-	font-family: var(--title-font-family);
-	background-color: var(--gray-color);
-	padding: 2px 4px;
-	margin: 4px;
-	border-radius: 4px;
-	white-space: pre-wrap;
-	word-wrap: break-word;
-  }
-  
-  hr {
+p code, li code {
+    font-family: var(--title-font-family);
+    background-color: var(--gray-color);
+    padding: .2em .4em;
+    margin: 0 2px;
+    border-radius: 6px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-size: 85%;
+}
+
+hr {
 	height: 1px;
 	width: 100%;
-	margin-top: 2px;
-	margin-bottom: 2px;
-	opacity: 40%;
-	color: var(--mgray-color);
-  }
+	margin: 24px 0;
+    border: 0;
+	background-color: var(--mgray-color);
+    opacity: 0.4;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 16px;
+    border-collapse: collapse;
+    display: block;
+    overflow: auto;
+}
+
+tr {
+    border-top: 1px solid var(--mgray-color);
+}
+
+tr:nth-child(2n) {
+    background-color: var(--gray-color);
+}
+
+th, td {
+    padding: 6px 13px;
+    border: 1px solid var(--mgray-color);
+}
+
+th {
+    font-weight: 600;
+}
+
+ul, ol {
+    padding-left: 2em;
+    margin-bottom: 16px;
+}
   
   /* >>>>> ================ FOOTER_CSS =============== <<<<< */
   footer {
