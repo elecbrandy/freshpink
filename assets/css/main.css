@@ -417,6 +417,11 @@ ul, ol {
 	font-size: 0.6rem;
   }
 
+  .toc ul:empty,
+  .toc li:empty {
+  	display: none !important;
+}
+
   /* >>>>> ================ MISC_CSS =============== <<<<< */
   div.list {
 	margin-top: 0.5rem;
