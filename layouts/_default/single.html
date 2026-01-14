@@ -1,7 +1,9 @@
 {{ define "main" }}
+  {{ with .TableOfContents }}
   <aside class="toc">
-    {{ .TableOfContents }}
+    {{ . }}
   </aside>
+  {{ end }}
   <div class="featured-container">
     {{ with .Params.featured_image }}
       <div class="featured-image">

@@ -46,6 +46,8 @@ weight = 30
   tag = 'tags'
 
 [markup]
+  [markup.tableOfContents]
+    endLevel = 3
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
