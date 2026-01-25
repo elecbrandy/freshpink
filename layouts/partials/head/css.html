@@ -1,19 +1,13 @@
-{{- with resources.Get "css/main.css" }}
-  {{- if eq hugo.Environment "development" }}
-    <link rel="stylesheet" href="{{ .RelPermalink }}">
-  {{- else }}
-    {{- with . | minify | fingerprint }}
-      <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
-    {{- end }}
-  {{- end }}
-{{- end }}
+{{/* layouts/partials/head/css.html */}}
 
-{{- with resources.Get "css/min600.css" }}
-  {{- if eq hugo.Environment "development" }}
-    <link rel="stylesheet" href="{{ .RelPermalink }}">
-  {{- else }}
-    {{- with . | minify | fingerprint }}
-      <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
-    {{- end }}
-  {{- end }}
-{{- end }}
+{{ $main := resources.Get "css/main.css" }}
+{{ $min600 := resources.Get "css/min600.css" }}
+
+{{ $styles := slice $main $min600 | resources.Concat "css/style.css" }}
+
+{{ if hugo.IsProduction }}
+  {{ $styles = $styles | resources.Minify | resources.Fingerprint }}
+{{ end }}
+
+<link rel="stylesheet" href="{{ $styles.RelPermalink }}" 
+      {{ if hugo.IsProduction }}integrity="{{ $styles.Data.Integrity }}"{{ end }}>

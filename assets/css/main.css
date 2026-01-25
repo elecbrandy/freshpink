@@ -2,10 +2,6 @@
 	box-sizing: border-box;
   }
   
-  @media (max-width: 600px) {
-	@import url("min600.css");
-  }
-  
   /* >>>>> ================ COLOR_VAR =============== <<<<< */
   :root {
 	--primary-color: #ec42ff;
@@ -47,13 +43,16 @@
   }
   
   .container {
-	min-width: 600px;
+	/* min-width: 600px; */
+	max-width: 600px;
+	width: 100%;
 	margin: 0 auto;
 	padding: 0 20px;
   }
   
   body {
-	width: 600px;
+	max-width: 600px;
+	width: 100%;
 	font-size: 0.9rem;
 	font-weight: 300;
 	color: var(--text-color);
@@ -61,7 +60,7 @@
 	letter-spacing: -0.3px;
 	line-height: 1.8;
 	background-color: var(--background-color);
-	padding: 20px 0;
+	padding: 20px;
 	margin: 0 auto;
 	word-break: keep-all;
 	overflow-wrap: break-word;
@@ -91,19 +90,24 @@
   }
 
   /* >>>>> ================ HEADER_CSS =============== <<<<< */
-  .main-header {
-	top: 0;
-	left: 50%;
-	transform: translateX(-50%);
-	width: 600px;
-	margin: 0 auto;
-	padding: 12px 0;
-	font-size: 0.8rem;
-	font-family: var(--title-font-family);
-	position: fixed;
-	background-color: var(--background-color);
-	z-index: 1000;
-  }
+.main-header {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    max-width: 600px; 
+    width: 100%;      
+    
+    margin: 0 auto;
+    
+    padding: 12px 20px; 
+
+    font-size: 0.8rem;
+    font-family: var(--title-font-family);
+    position: fixed;
+    background-color: var(--background-color);
+    z-index: 1000;
+}
   
   .main-header nav {
 	display: flex;
@@ -122,8 +126,8 @@
   
   /* >>>>> ================ MARKDOWN_CSS =============== <<<<< */
 h1, h2, h3, h4, h5, h6 {
-	margin-top: 24px;
-	margin-bottom: 16px;
+	margin-top: 16px;
+	margin-bottom: 8px;
 	font-family: var(--header-font-family);
 	letter-spacing: -1.2px;
 	font-weight: 700;
@@ -173,6 +177,10 @@ blockquote {
 	padding: 4px 24px;
 	border-left: 4px solid var(--mgray-color);
 	background-color: var(--gray-color);
+}
+
+strong, b {
+	font-weight: 700;
 }
 
 blockquote p {
@@ -268,8 +276,9 @@ th {
 }
 
 ul, ol {
-    padding-left: 2em;
-    margin-bottom: 16px;
+    padding-left: 1.5em;
+	margin-top: 4px;
+    margin-bottom: 12px;
 }
   
   /* >>>>> ================ FOOTER_CSS =============== <<<<< */
@@ -416,12 +425,6 @@ ul, ol {
   .toc ul li ul li ul li{
 	font-size: 0.6rem;
   }
-
-  .toc ul:empty,
-  .toc li:empty {
-  	display: none !important;
-}
-
 
   /* >>>>> ================ MISC_CSS =============== <<<<< */
   div.list {

@@ -1,0 +1,16 @@
+{{/* layouts/_default/_markup/render-image.html */}}
+
+{{- $u := .Destination -}}
+{{- $text := .Text -}}
+{{- $title := .Title -}}
+
+<figure>
+  <img src="{{ $u | safeURL }}" 
+       alt="{{ $text }}" 
+       {{ with $title }}title="{{ . }}"{{ end }} 
+       loading="lazy" 
+       decoding="async">
+  {{- with $title -}}
+    <figcaption>{{ . }}</figcaption>
+  {{- end -}}
+</figure>
