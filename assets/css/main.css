@@ -350,11 +350,6 @@ ul, ol {
   }
   
   /* >>>>> ================ IMAGE_CSS =============== <<<<< */
-  
-  img {
-    max-width: 100%;
-    height: auto;
-  }
 
   div.main-image {
 	width: 100%;
