@@ -4,7 +4,7 @@
   
   /* >>>>> ================ COLOR_VAR =============== <<<<< */
   :root {
-	--primary-color: #ec42ff;
+	--primary-color: #fa8b84;
 	--white-color: #FFFFFF;
 	--black-color: #181818;
 	--dgray-color: #464646;
@@ -327,7 +327,7 @@ ul, ol {
   div.commit img {
 	display: block;
 	margin-bottom: 1rem;
-	max-width: 600px;
+	max-width: 100%;
 	height: auto;
   }
   
@@ -350,6 +350,22 @@ ul, ol {
   }
   
   /* >>>>> ================ IMAGE_CSS =============== <<<<< */
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  div.main-image {
+	width: 100%;
+  }
+  
+  div.main-image img {
+	display: block;
+	margin-bottom: 1rem;
+	max-width: 100%;
+	height: auto;
+  }
 
   .featured-container {
 	position: relative;
