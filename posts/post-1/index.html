@@ -26,8 +26,8 @@
   
 
 
-<link rel="stylesheet" href="https://elecbrandy.github.io/freshpink/css/style.min.892968068b3ac83511fd4d75f8881856c43b1ff5184fd6a8f760e9164a9aee56.css" 
-      integrity="sha256-iSloBos6yDUR/U11&#43;IgYVsQ7H/UYT9ao92DpFkqa7lY="><style>
+<link rel="stylesheet" href="https://elecbrandy.github.io/freshpink/css/style.min.9b52840ff847d49a3f3379e089850a370dbfdffb41226dfaeda079f69691a88c.css" 
+      integrity="sha256-m1KED/hH1Jo/M3ngiYUKNw2/3/tBIm367aB59paRqIw="><style>
   :root {
     --primary-color: #fa8b84;
   }
@@ -152,17 +152,17 @@
 <li>Terminal (macOS/Linux/WSL)</li>
 </ul>
 <p>Check your Hugo version!</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo version
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo version
 </span></span></code></pre></div><br>
 <br>
 <h2 id="4-lets-start">4. Let&rsquo;s start</h2>
 <hr>
 <h3 id="4-1-create-a-new-hugo-site">4-1. Create a New Hugo Site</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo new site myblog
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo new site myblog
 </span></span><span style="display:flex;"><span>cd myblog
 </span></span></code></pre></div><br>
 <h3 id="4-2-initialize-hugo-modules">4-2. Initialize Hugo Modules</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo mod init github.com/yourname/myblog
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo mod init github.com/yourname/myblog
 </span></span></code></pre></div><p>Replace <code>yourname/myblog</code> with your GitHub path (or any unique identifier).
 That means the repository address that you will host through GitHub. In my case, I made it <code>hugo mod init github.com/elecbrandy/elecbrandy.github.io</code>.</p>
 <br>
@@ -191,7 +191,7 @@ That means the repository address that you will host through GitHub. In my case,
 <p>Important: <strong>Do not add or define a <code>theme</code> field.</strong> We&rsquo;re using Hugo Modules to manage the theme, so this must be left out.</p>
 </li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#a6e22e">baseURL</span> = <span style="color:#e6db74">&#39;https://example.org/&#39;</span> <span style="color:#75715e"># your git repository address</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#a6e22e">baseURL</span> = <span style="color:#e6db74">&#39;https://example.org/&#39;</span> <span style="color:#75715e"># your git repository address</span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#39;freshpink&#39;</span> <span style="color:#75715e"># your own blog title</span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">languageCode</span> = <span style="color:#e6db74">&#39;en-us&#39;</span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">canonifyURLs</span> = <span style="color:#66d9ef">true</span>
@@ -244,13 +244,13 @@ That means the repository address that you will host through GitHub. In my case,
 </span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">unsafe</span> = <span style="color:#66d9ef">true</span>
 </span></span></code></pre></div><br>
 <h3 id="4-4-download-the-theme">4-4. Download the Theme</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo mod tidy
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo mod tidy
 </span></span></code></pre></div><br>
 <h3 id="4-5-create-your-first-post">4-5. Create Your First Post</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo new posts/hello.md
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo new posts/hello.md
 </span></span></code></pre></div><br>
 <h3 id="4-6-run-the-local-server">4-6. Run the Local Server</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo server -D
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo server -D
 </span></span></code></pre></div><p>Then open (local check) -&gt; <a href="http://localhost:1313">http://localhost:1313</a></p>
 <p>You should see your blog styled with the <strong>freshpink</strong> theme! 🎉</p>
 <br>
