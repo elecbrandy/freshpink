@@ -23,9 +23,9 @@
 	.toc {
 	  display: none;
 	}
-	p img[src*="shields.io"], 
-	p img[src*="badge"], 
-	p img[src*=".svg"] {
+	img[src*="shields.io"], 
+	img[src*="badge"], 
+	img[src*=".svg"] {
 		width: auto !important;
 		display: inline-block;
 		margin: 2px 4px;
@@ -46,9 +46,9 @@
 	  display: none;
 	}
 
-	p img[src*="shields.io"], 
-	p img[src*="badge"], 
-	p img[src*=".svg"] {
+	img[src*="shields.io"], 
+	img[src*="badge"], 
+	img[src*=".svg"] {
 		width: auto !important;
 		display: inline-block;
 		margin: 2px 4px;
