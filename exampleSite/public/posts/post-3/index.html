@@ -16,9 +16,16 @@
 <meta name="viewport" content="width=device-width">
 <title>03. Shortcuts | freshpink</title>
 
-    <link rel="stylesheet" href="http://localhost:1313/freshpink/css/main.css">
-    <link rel="stylesheet" href="http://localhost:1313/freshpink/css/min600.css">
-<style>
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="http://localhost:1313/freshpink/css/style.css" 
+      ><style>
   :root {
     --primary-color: #fa8b84;
   }
@@ -45,9 +52,13 @@
 <body>
     <header class="main-header">
 	<nav>
-	  <li><a href="http://localhost:1313/freshpink/">/home</a></li>
-	  <li><a href="http://localhost:1313/freshpink/tags/">/tags</a></li>
-	  <li><a href="http://localhost:1313/freshpink/about/">/about</a></li>
+		
+		<li><a href="http://localhost:1313/freshpink/">/home</a></li>
+		
+		<li><a href="http://localhost:1313/freshpink/tags/">/tags</a></li>
+		
+		<li><a href="http://localhost:1313/freshpink/about/">/about</a></li>
+		
 	  <li id="theme-toggle" style="cursor: pointer;">/todark</li>
 	</nav>
   </header>
@@ -84,6 +95,7 @@
   </script>
 
     
+  
   <aside class="toc">
     <nav id="TableOfContents">
   <ul>
@@ -96,6 +108,7 @@
   </ul>
 </nav>
   </aside>
+  
   <div class="featured-container">
     
       <div class="featured-image">
@@ -114,7 +127,8 @@
 <br>
 <h3 id="1-1-setting">1-1. Setting</h3>
 <blockquote>
-<p>Create a Series Data File</p></blockquote>
+<p>Create a Series Data File</p>
+</blockquote>
 <p>First, you need to create a data file that contains the information about the documents in each series. Create a YAML file under Hugo’s <code>data*/</code> folder to manage the series information&hellip;</p>
 <p>Example: <code>data/series/freshPink.yaml</code></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">title</span>: <span style="color:#e6db74">&#34;freshPink&#34;</span>
@@ -128,9 +142,10 @@
 </span></span></code></pre></div><p>In this file, the <code>items</code> list includes the name and link of each document that belongs to the series.</p>
 <br>
 <blockquote>
-<p>Create the Shortcode File</p></blockquote>
+<p>Create the Shortcode File</p>
+</blockquote>
 <p>To display the series in a markdown file, you can use the shortcode like this!</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>{{&lt; <span style="color:#f92672">series</span> <span style="color:#a6e22e">title</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;📚 /freshPink tutorial&#34;</span> <span style="color:#a6e22e">series</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;freshPink&#34;</span> &gt;}}
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>{{&lt; series title=&#34;📚 /freshPink tutorial&#34; series=&#34;freshPink&#34; &gt;}}
 </span></span></code></pre></div><ul>
 <li><code>title</code>: This will be the title that users can click to expand the list.</li>
 <li><code>series</code>: Refers to the YAML file name inside the <code>data/series/</code> directory (without the file extension).</li>
@@ -138,7 +153,7 @@
 <br>
 <h3 id="1-2-example">1-2. Example</h3>
 <p>When you include that code in your markdown file, the following collapsible list will be generated!</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span><div class="series">
+<div class="series">
   <details>
     <summary>📚 /freshPink tutorial</summary>
     <ul>
@@ -157,7 +172,7 @@
   </details>
 </div>
 
-</span></span></code></pre></div><br>
+<br>
 <br>
 
 

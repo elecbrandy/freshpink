@@ -1,17 +1,18 @@
 *, *:before, *:after {
 	box-sizing: border-box;
   }
-  
+
   /* >>>>> ================ COLOR_VAR =============== <<<<< */
   :root {
 	--primary-color: #fa8b84;
+	--primary-dark-color: #c75b56;
 	--white-color: #FFFFFF;
 	--black-color: #181818;
 	--dgray-color: #464646;
 	--mgray-color: #828282;
 	--lgray-color: #f2f2f2;
 
-	--background-color: var(--white-color);
+	--backgrouㅋnd-color: var(--white-color);
 	--text-color: var(--black-color);
 	--gray-color: var(--lgray-color);
 	--code-color: var(--mgray-color);
@@ -53,12 +54,12 @@
   body {
 	max-width: 600px;
 	width: 100%;
-	font-size: 0.9rem;
-	font-weight: 300;
+	font-size: 0.95rem;
+	font-weight: 400;
 	color: var(--text-color);
 	font-family: var(--content-font-family);
 	letter-spacing: -0.3px;
-	line-height: 1.8;
+	line-height: 1.75;
 	background-color: var(--background-color);
 	padding: 20px;
 	margin: 0 auto;
@@ -120,7 +121,7 @@
   }
 
   .main-header nav li a.active {
-	color: var(--primary-color);
+	color: var(--primary-dark-color);
   }
   
   
@@ -137,14 +138,14 @@ h1 {
 	font-size: 1.8rem;
 	line-height: 2.0;
     padding-bottom: .3em;
-	border-bottom: 1px solid var(--mgray-color);
+	border-bottom: 1px solid var(--primary-color);
 }
 
 h2 {
 	font-size: 1.6rem;
 	line-height: 1.6;
     padding-bottom: .3em;
-	border-bottom: 1px solid var(--mgray-color);
+	border-bottom: 1.2px solid var(--mgray-color);
 }
 
 h3 {
@@ -175,8 +176,10 @@ blockquote {
 	line-height: 1.8;
 	margin: 0 0 16px;
 	padding: 4px 24px;
-	border-left: 4px solid var(--mgray-color);
 	background-color: var(--gray-color);
+	border-left: 4px solid var(--primary-color); /* 포인트 컬러 적용 */
+    background-color: var(--gray-color);
+    border-radius: 4px;
 }
 
 strong, b {
@@ -239,6 +242,7 @@ p code, li code {
     white-space: pre-wrap;
     word-wrap: break-word;
     font-size: 85%;
+	color: var(--primary-dark-color);
 }
 
 hr {
@@ -250,30 +254,53 @@ hr {
     opacity: 0.4;
 }
 
+/* >>>>> ================ TABLE_CSS =============== <<<<< */
+
 table {
     width: 100%;
-    margin-bottom: 16px;
-    border-collapse: collapse;
-    display: block;
-    overflow: auto;
+    margin: 2rem 0;
+
+    border-collapse: separate; 
+    border-spacing: 0;
+    border-radius: 6px;
+    border: 1px solid rgba(0,0,0,0.15);
+    overflow: hidden;
+    
+    font-size: 0.9rem;
+    line-height: 1.6;
 }
 
 tr {
-    border-top: 1px solid var(--mgray-color);
+    background-color: var(--background-color);
 }
 
 tr:nth-child(2n) {
-    background-color: var(--gray-color);
+    background-color: rgba(0,0,0,0.02);
 }
 
 th, td {
-    padding: 6px 13px;
-    border: 1px solid var(--mgray-color);
+    padding: 12px 16px;
+    text-align: left;
+    
+    border-left: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 
 th {
     font-weight: 600;
+    background-color: var(--table-head-bg); 
+    border-bottom: 2px solid rgba(130, 130, 130, 0.2);
+    color: var(--text-color);
 }
+
+th:first-child, td:first-child {
+    border-left: none;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
 
 ul, ol {
     padding-left: 1.5em;
@@ -281,7 +308,7 @@ ul, ol {
     margin-bottom: 12px;
 }
   
-  /* >>>>> ================ FOOTER_CSS =============== <<<<< */
+/* >>>>> ================ FOOTER_CSS =============== <<<<< */
   footer {
 	font-family: var(--title-font-family);
 	font-size: 8pt;
@@ -348,8 +375,14 @@ ul, ol {
 	padding-left: 14px;
 	padding-top: 4px;
   }
-  
+
   /* >>>>> ================ IMAGE_CSS =============== <<<<< */
+
+  img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 4px;
+  }
 
   div.main-image {
 	width: 100%;
@@ -460,4 +493,3 @@ ul, ol {
 	font-family: var(--title-font-family);
 	color: var(--text-color);
   }
-  
