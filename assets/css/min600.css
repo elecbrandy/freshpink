@@ -23,6 +23,17 @@
 	.toc {
 	  display: none;
 	}
+	p img[src*="shields.io"], 
+	p img[src*="badge"], 
+	p img[src*=".svg"] {
+		width: auto !important;
+		display: inline-block;
+		margin: 2px 4px;
+		vertical-align: middle;
+		box-shadow: none;
+		border-radius: 0;
+	}
+
   }
   
   @media (max-width: 375px) {
@@ -33,6 +44,17 @@
   
 	.toc {
 	  display: none;
+	}
+
+	p img[src*="shields.io"], 
+	p img[src*="badge"], 
+	p img[src*=".svg"] {
+		width: auto !important;
+		display: inline-block;
+		margin: 2px 4px;
+		vertical-align: middle;
+		box-shadow: none;
+		border-radius: 0;
 	}
   }
   
