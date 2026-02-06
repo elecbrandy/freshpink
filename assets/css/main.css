@@ -493,3 +493,15 @@ ul, ol {
 	font-family: var(--title-font-family);
 	color: var(--text-color);
   }
+
+
+p img[src*="shields.io"], 
+p img[src*="badge"], 
+p img[src*=".svg"] {
+    width: auto !important;
+    display: inline-block;
+    margin: 2px 4px;
+    vertical-align: middle;
+    box-shadow: none;
+    border-radius: 0;
+}
